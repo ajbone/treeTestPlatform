@@ -1,0 +1,1809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="865135c1-818e-4be0-adb6-8662b74b3ab7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dashu/datashow/controller/GetPackageController.class" afterPath="$PROJECT_DIR$/target/classes/com/dashu/datashow/controller/GetPackageController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dashu/datashow/controller/GetSDKController.class" afterPath="$PROJECT_DIR$/target/classes/com/dashu/datashow/controller/GetSDKController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dashu/datashow/controller/Test02.class" afterPath="$PROJECT_DIR$/target/classes/com/dashu/datashow/controller/Test02.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dashu/datashow/controller/packageData.class" afterPath="$PROJECT_DIR$/target/classes/com/dashu/datashow/controller/packageData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/.cache/xiaoji123pt/app-pro-release_357_jiagu.apk" afterPath="$PROJECT_DIR$/target/classes/jiagu/.cache/xiaoji123pt/app-pro-release_357_jiagu.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/.cache/xiaoji123pt/app-pro-release_357_jiagu.tmp" afterPath="$PROJECT_DIR$/target/classes/jiagu/.cache/xiaoji123pt/app-pro-release_357_jiagu.tmp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/bin/aapt" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/bin/aapt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/bin/jarsigner" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/bin/jarsigner" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/bin/java" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/bin/java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/bin/jjs" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/bin/jjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/bin/keytool" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/bin/keytool" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/bin/orbd" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/bin/orbd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/bin/pack200" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/bin/pack200" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/bin/policytool" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/bin/policytool" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/bin/rmid" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/bin/rmid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/bin/rmiregistry" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/bin/rmiregistry" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/bin/servertool" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/bin/servertool" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/bin/tnameserv" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/bin/tnameserv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/bin/unpack200" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/bin/unpack200" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/charsets.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/charsets.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/cmm/CIEXYZ.pf" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/cmm/CIEXYZ.pf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/cmm/GRAY.pf" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/cmm/GRAY.pf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/cmm/LINEAR_RGB.pf" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/cmm/LINEAR_RGB.pf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/cmm/PYCC.pf" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/cmm/PYCC.pf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/cmm/sRGB.pf" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/cmm/sRGB.pf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/currency.data" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/currency.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/cldrdata.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/cldrdata.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/dnsns.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/dnsns.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/jaccess.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/jaccess.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/jfxrt.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/jfxrt.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/localedata.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/localedata.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/nashorn.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/nashorn.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/sunec.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/sunec.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/sunjce_provider.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/sunjce_provider.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/sunpkcs11.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/sunpkcs11.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/zipfs.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/zipfs.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fontconfig.bfc" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fontconfig.bfc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/LucidaBrightDemiBold.ttf" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/LucidaBrightDemiBold.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/LucidaBrightDemiItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/LucidaBrightDemiItalic.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/LucidaBrightItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/LucidaBrightItalic.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/LucidaBrightRegular.ttf" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/LucidaBrightRegular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/LucidaSansDemiBold.ttf" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/LucidaSansDemiBold.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/LucidaSansRegular.ttf" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/LucidaSansRegular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/LucidaTypewriterBold.ttf" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/LucidaTypewriterBold.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/LucidaTypewriterRegular.ttf" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/LucidaTypewriterRegular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/images/cursors/invalid32x32.gif" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/images/cursors/invalid32x32.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/images/cursors/motif_CopyDrop32x32.gif" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/images/cursors/motif_CopyDrop32x32.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/images/cursors/motif_CopyNoDrop32x32.gif" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/images/cursors/motif_CopyNoDrop32x32.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/images/cursors/motif_LinkDrop32x32.gif" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/images/cursors/motif_LinkDrop32x32.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/images/cursors/motif_LinkNoDrop32x32.gif" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/images/cursors/motif_LinkNoDrop32x32.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/images/cursors/motif_MoveDrop32x32.gif" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/images/cursors/motif_MoveDrop32x32.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/images/cursors/motif_MoveNoDrop32x32.gif" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/images/cursors/motif_MoveNoDrop32x32.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jfr.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jfr.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jfxswt.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jfxswt.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jli/libjli.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jli/libjli.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jspawnhelper" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jspawnhelper" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jsse.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jsse.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libAppleScriptEngine.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libAppleScriptEngine.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libattach.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libattach.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libawt.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libawt.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libawt_lwawt.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libawt_lwawt.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libbci.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libbci.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libdcpr.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libdcpr.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libdecora_sse.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libdecora_sse.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libdt_socket.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libdt_socket.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libfontmanager.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libfontmanager.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libfxplugins.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libfxplugins.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libglass.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libglass.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libglib-lite.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libglib-lite.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libgstreamer-lite.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libgstreamer-lite.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libhprof.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libhprof.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libinstrument.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libinstrument.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libj2gss.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libj2gss.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libj2pcsc.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libj2pcsc.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libj2pkcs11.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libj2pkcs11.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjaas_unix.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjaas_unix.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjava.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjava.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjava_crw_demo.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjava_crw_demo.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjavafx_font.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjavafx_font.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjavafx_font_t2k.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjavafx_font_t2k.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjavafx_iio.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjavafx_iio.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjawt.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjawt.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjdwp.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjdwp.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjfr.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjfr.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjfxmedia.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjfxmedia.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjfxmedia_avf.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjfxmedia_avf.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjfxmedia_qtkit.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjfxmedia_qtkit.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjfxwebkit.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjfxwebkit.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjpeg.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjpeg.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjsdt.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjsdt.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjsig.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjsig.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjsound.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libjsound.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libkcms.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libkcms.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/liblcms.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/liblcms.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libmanagement.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libmanagement.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libmlib_image.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libmlib_image.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libnet.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libnet.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libnio.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libnio.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libnpt.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libnpt.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libosx.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libosx.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libosxapp.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libosxapp.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libosxkrb5.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libosxkrb5.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libosxui.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libosxui.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libprism_common.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libprism_common.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libprism_es2.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libprism_es2.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libprism_sw.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libprism_sw.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libresource.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libresource.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libsaproc.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libsaproc.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libsplashscreen.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libsplashscreen.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libsunec.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libsunec.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libt2k.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libt2k.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libunpack.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libunpack.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libverify.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libverify.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libzip.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/libzip.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/management-agent.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/management-agent.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/resources.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/resources.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/rt.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/rt.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/security/US_export_policy.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/security/US_export_policy.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/security/cacerts" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/security/cacerts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/security/local_policy.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/security/local_policy.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/security/trusted.libraries" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/security/trusted.libraries" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/server/libjsig.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/server/libjsig.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/server/libjvm.dylib" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/server/libjvm.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/tzdb.dat" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/tzdb.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/jiagu.db" afterPath="$PROJECT_DIR$/target/classes/jiagu/jiagu.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/jiagu.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/jiagu.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/betterbeansbinding-1.3.0-all.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/betterbeansbinding-1.3.0-all.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/bsd.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/bsd.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/commons-codec-1.9.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/commons-codec-1.9.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/commons-collections-3.2.1.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/commons-collections-3.2.1.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/commons-compress-1.10.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/commons-compress-1.10.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/commons-io-2.4.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/commons-io-2.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/commons-lang3-3.4.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/commons-lang3-3.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/commons-logging-1.2.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/commons-logging-1.2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/cssparser-0.9.18.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/cssparser-0.9.18.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/htmlunit-2.19.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/htmlunit-2.19.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/htmlunit-core-js-2.17.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/htmlunit-core-js-2.17.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/httpmime-4.5.1.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/httpmime-4.5.1.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/jdom.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/jdom.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/jetty-io-9.2.13.v20150730.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/jetty-io-9.2.13.v20150730.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/jetty-util-9.2.13.v20150730.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/jetty-util-9.2.13.v20150730.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/json.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/json.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/market.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/market.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/nekohtml-1.9.22.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/nekohtml-1.9.22.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/net.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/net.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/org.apache.httpcomponents.httpclient_4.5.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/org.apache.httpcomponents.httpclient_4.5.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/org.apache.httpcomponents.httpcore_4.4.1.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/org.apache.httpcomponents.httpcore_4.4.1.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/sac-1.3.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/sac-1.3.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/serializer-2.7.2.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/serializer-2.7.2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/sqlite-jdbc-3.8.11.2.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/sqlite-jdbc-3.8.11.2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/websocket-api-9.2.13.v20150730.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/websocket-api-9.2.13.v20150730.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/websocket-client-9.2.13.v20150730.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/websocket-client-9.2.13.v20150730.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/websocket-common-9.2.13.v20150730.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/websocket-common-9.2.13.v20150730.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/xalan-2.7.2.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/xalan-2.7.2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/xercesImpl-2.11.0.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/xercesImpl-2.11.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/xml-apis-1.4.01.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/xml-apis-1.4.01.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/lib/zip4j_1.3.1.jar" afterPath="$PROJECT_DIR$/target/classes/jiagu/lib/zip4j_1.3.1.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/treeTestPlatform_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/treeTestPlatform_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/GetPackageController.java" afterPath="$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/GetPackageController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/packageData.java" afterPath="$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/packageData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/channelPackage/MultiChannelBuildTool.py" afterPath="$PROJECT_DIR$/src/main/resources/channelPackage/MultiChannelBuildTool.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/channelPackage/info/imoney.txt" afterPath="$PROJECT_DIR$/src/main/resources/channelPackage/info/imoney.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/parameter.properties" afterPath="$PROJECT_DIR$/src/main/resources/parameter.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/add_channel.vm" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/add_channel.vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/add_project.vm" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/add_project.vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/All-Channel.txt" afterPath="$PROJECT_DIR$/target/classes/jiagu/All-Channel.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/help.txt" afterPath="$PROJECT_DIR$/target/classes/jiagu/help.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/calendars.properties" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/calendars.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/classlist" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/classlist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/content-types.properties" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/content-types.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/meta-index" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/ext/meta-index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/flavormap.properties" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/flavormap.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fontconfig.properties.src" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fontconfig.properties.src" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/fonts.dir" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/fonts/fonts.dir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/hijrah-config-umalqura.properties" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/hijrah-config-umalqura.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/images/cursors/cursors.properties" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/images/cursors/cursors.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/javafx.properties" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/javafx.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jfr/default.jfc" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jfr/default.jfc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jfr/profile.jfc" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jfr/profile.jfc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jvm.cfg" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jvm.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jvm.hprof.txt" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/jvm.hprof.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/logging.properties" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/logging.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/management/jmxremote.access" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/management/jmxremote.access" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/management/jmxremote.password.template" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/management/jmxremote.password.template" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/management/management.properties" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/management/management.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/management/snmp.acl.template" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/management/snmp.acl.template" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/meta-index" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/meta-index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/net.properties" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/net.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/psfont.properties.ja" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/psfont.properties.ja" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/psfontj2d.properties" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/psfontj2d.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/security/blacklist" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/security/blacklist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/security/blacklisted.certs" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/security/blacklisted.certs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/security/java.policy" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/security/java.policy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/security/java.security" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/security/java.security" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/server/Xusage.txt" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/server/Xusage.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/lib/sound.properties" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/lib/sound.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/java.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/java.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/javaws.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/javaws.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/jjs.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/jjs.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/keytool.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/keytool.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/orbd.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/orbd.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/pack200.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/pack200.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/policytool.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/policytool.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/rmid.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/rmid.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/rmiregistry.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/rmiregistry.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/servertool.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/servertool.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/tnameserv.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/tnameserv.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/unpack200.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/ja_JP.UTF-8/man1/unpack200.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/java.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/java.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/javaws.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/javaws.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/jjs.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/jjs.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/keytool.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/keytool.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/orbd.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/orbd.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/pack200.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/pack200.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/policytool.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/policytool.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/rmid.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/rmid.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/rmiregistry.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/rmiregistry.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/servertool.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/servertool.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/tnameserv.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/tnameserv.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/unpack200.1" afterPath="$PROJECT_DIR$/target/classes/jiagu/java/man/man1/unpack200.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/login" afterPath="$PROJECT_DIR$/target/classes/jiagu/login" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/readme.txt" afterPath="$PROJECT_DIR$/target/classes/jiagu/readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jiagu/多渠道模板.txt" afterPath="$PROJECT_DIR$/target/classes/jiagu/多渠道模板.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/parameter.properties" afterPath="$PROJECT_DIR$/target/classes/parameter.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/treeTestPlatform.iml" afterPath="$PROJECT_DIR$/treeTestPlatform.iml" />
+    </list>
+    <ignored path="treeTestPlatform.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="treeTestPlatform" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="parameter.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/parameter.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package_list.vm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/package_list.vm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="101.25">
+              <caret line="83" column="47" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_project.vm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/add_project.vm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.25">
+              <caret line="53" column="69" selection-start-line="53" selection-start-column="69" selection-end-line="53" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_channel.vm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/add_channel.vm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.875">
+              <caret line="71" column="37" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultiChannelBuildTool.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/channelPackage/MultiChannelBuildTool.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.742268">
+              <caret line="141" column="56" selection-start-line="141" selection-start-column="56" selection-end-line="141" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetPackageController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/GetPackageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.333333">
+              <caret line="271" column="115" selection-start-line="271" selection-start-column="109" selection-end-line="271" selection-end-column="115" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetSDKController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/GetSDKController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="265" column="5" selection-start-line="265" selection-start-column="5" selection-end-line="265" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModifyPasswordController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/ModifyPasswordController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="packageData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/packageData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-83.333336">
+              <caret line="749" column="52" selection-start-line="749" selection-start-column="52" selection-end-line="749" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="androidHistory.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/androidHistory.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/dashu/datashow/mapper/BugCheckMapper.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/task_list.vm" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/task_action_list.vm" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/task_run.vm" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dashu/datashow/service/AddTaskServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/Test02.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/FailController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/pages/fail.vm" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/taskRunController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dashu/datashow/service/AddProjectServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/foot.vm" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/sdk_list.vm" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/GetSDKController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/package_list.vm" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/androidHistory.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/pages/success.vm" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/AddChannelController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/parameter.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/add_project.vm" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/GetPackageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/packageData.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/add_channel.vm" />
+        <option value="$PROJECT_DIR$/src/main/resources/channelPackage/MultiChannelBuildTool.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.3.9" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="mass" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="mass" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="mass" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="jetty" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="729" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="channelPackage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datashow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datashow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treeTestPlatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datashow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Test02">
+    <configuration default="false" name="Test02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dashu.datashow.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.dashu.datashow.controller.Test02" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="treeTestPlatform" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="treeTestPlatform" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.Test02" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Test02" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="865135c1-818e-4be0-adb6-8662b74b3ab7" name="Default" comment="" />
+      <created>1493783764163</created>
+      <option name="number" value="Default" />
+      <updated>1493783764163</updated>
+      <workItem from="1493783798588" duration="7480000" />
+      <workItem from="1495093597910" duration="366000" />
+      <workItem from="1495174047638" duration="1808000" />
+      <workItem from="1495183219381" duration="37520000" />
+      <workItem from="1496220077318" duration="7913000" />
+      <workItem from="1496642659122" duration="726000" />
+      <workItem from="1496650300935" duration="3979000" />
+      <workItem from="1496837716791" duration="11655000" />
+      <workItem from="1497929213925" duration="10186000" />
+      <workItem from="1498632431028" duration="1993000" />
+      <workItem from="1507866083331" duration="7413000" />
+      <workItem from="1508126109638" duration="16128000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="107173000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="729" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28756058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31012657" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/util/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/Test02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/util/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/Test02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/packageData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="423" column="50" selection-start-line="423" selection-start-column="50" selection-end-line="423" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/GetPackageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/AddProjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/service/AddProjectServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="96" column="48" selection-start-line="96" selection-start-column="48" selection-end-line="96" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/mapper/BugCheckMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/packageDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/util/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/Test02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/packageData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="423" column="50" selection-start-line="423" selection-start-column="50" selection-end-line="423" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/GetPackageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/AddProjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/service/AddProjectServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="96" column="48" selection-start-line="96" selection-start-column="48" selection-end-line="96" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/mapper/BugCheckMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/packageDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/util/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/task_list.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/task_run.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="49" column="71" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/mapper/BugCheckMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/task_action_list.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12798634">
+          <caret line="27" column="71" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/packageDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/Test02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/FailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="104" selection-start-line="55" selection-start-column="98" selection-end-line="55" selection-end-column="104" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/pages/fail.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/service/AddTaskServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/taskRunController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/sdk_list.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="95" column="99" selection-start-line="95" selection-start-column="99" selection-end-line="95" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/foot.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/AddTaskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="193" column="22" selection-start-line="193" selection-start-column="22" selection-end-line="193" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/pages/success.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/AddProjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="10" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/AddChannelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/AddChannelListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/service/AddProjectServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="150" column="61" selection-start-line="150" selection-start-column="61" selection-end-line="150" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/service/SendMailServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="176" column="30" selection-start-line="176" selection-start-column="30" selection-end-line="176" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/parameter.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/androidHistory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/ModifyPasswordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/GetSDKController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="265" column="5" selection-start-line="265" selection-start-column="5" selection-end-line="265" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/package_list.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="101.25">
+          <caret line="83" column="47" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/packageData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-83.333336">
+          <caret line="749" column="52" selection-start-line="749" selection-start-column="52" selection-end-line="749" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dashu/datashow/controller/GetPackageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.333333">
+          <caret line="271" column="115" selection-start-line="271" selection-start-column="109" selection-end-line="271" selection-end-column="115" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/add_project.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="53" column="69" selection-start-line="53" selection-start-column="69" selection-end-line="53" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vm/commons/layout/add_channel.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="71" column="37" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/channelPackage/MultiChannelBuildTool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.742268">
+          <caret line="141" column="56" selection-start-line="141" selection-start-column="56" selection-end-line="141" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,89 @@
+    <!-- Content Header (Page header) -->
+<script src="/resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
+
+#set($i=1)
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- /.box -->
+
+                    <div class="box">
+
+                        <input id="redirect_url" name ="redirect_url"  type="hidden"  value= "$!{redirect_url}">
+##                        <div class="box-header">
+##                            <h3 class="box-title">列表展示</h3>
+##                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <table id="example1" class="table table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <th style="width: 5%"><font size='2'>序</font></th>
+                                    <th style="width: 10%"><font size='2'>创建时间</font></th>
+                                    <th style="width: 9%"><font size='2'>创建人</font></th>
+                                    <th style="width: 10%"><font size='2'>所属app</font></th>
+                                    <th style="width: 17%"><font size='2'>集合名</font></th>
+                                    <th style="width: 40%"><font size='2'>包含渠道</font></th>
+                                    <th style="width: 9%"><font size='2'>操作</font></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    #foreach ($channel in $channelList.entrySet())
+                                    <tr>
+                                        <td>$i</td>
+                                        <td><font size='2'>$!channel.value.get(0)</font></td>
+                                        <td><font size='2'>$!channel.value.get(1)</font></td>
+                                        <td><font size='2'>$!channel.value.get(4)</font></td>
+                                        <td><font size='2'>$!channel.value.get(2)</font></td>
+                                        <td><font size='2'>$!channel.value.get(3).replace("{","").replace("}","").replace('"',"").replace(",","<br>")</td>
+                                        <td ><font size='2'><a href="/pages/addChannelList.jspa?edit=$!channel.key" >编辑</a>&nbsp;&nbsp;<a href="/AddChannelListServlet?isdelete=yes&did=$!channel.key" onclick="javascript:return del();">删除</a></font></td>
+                                    </tr>
+                                        #set($i=$i+1)
+                                    #end
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+
+
+        </section>
+
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+##<!-- DataTables -->
+<script src="/resources/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/resources/plugins/datatables/dataTables.bootstrap.min.js"></script>
+<!-- page script -->
+<script>
+    $(function () {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false
+        });
+    });
+</script>
+
+    <SCRIPT LANGUAGE=javascript>
+        function del() {
+            var msg = "您真的确定要删除吗？\n\n请确认！";
+            if (confirm(msg)==true){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </SCRIPT>
+

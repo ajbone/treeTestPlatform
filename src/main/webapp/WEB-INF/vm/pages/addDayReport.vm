@@ -1,0 +1,46 @@
+
+
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" >
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                发送测试日报
+                <small>Versoin1.0</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-envelope-o"></i> Home</a></li>
+                <li class="active">测试日报</li>
+            </ol>
+        </section>
+
+
+        <section class="content">
+
+            #parse('/commons/layout/email.vm')
+
+
+##            #parse('/commons/layout/report_resolve.vm')
+
+##            <div class="callout callout-info">
+##                <h4>以下为线上问题概要:</h4>
+##            </div>
+##
+##            #parse('/commons/layout/online_detail.vm')
+
+
+        </section>
+
+    </div>
+
+
+</div>
+</body>
+
+
+

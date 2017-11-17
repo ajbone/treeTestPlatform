@@ -1,0 +1,103 @@
+<!-- Content Wrapper. Contains page content -->
+<!-- Content Header (Page header) -->
+<script src="/resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
+
+<script src="/resources/plugins/select2/select2.full.min.js"></script>
+
+<!-- Main content -->
+<section class="content">
+
+    <!-- SELECT2 EXAMPLE -->
+    <div class="box box-info">
+        <div class="box-header">
+            <i class="fa fa-plus"></i>
+            <h3 class="box-title">添加渠道</h3>
+            <div class="pull-right box-tools">
+##                <button type="button" class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip" title="Remove">
+##                    <i class="fa fa-times"></i></button>
+            </div>
+        </div>
+
+        <form action="/AddChannelServlet" method="post">
+            <input id="id" name ="id"  type="hidden"  value= "$!{id}">
+            <input id="usernick" name ="usernick"  type="hidden"  value= "$!{userNick}">
+            <input id="redirect_url" name ="redirect_url"  type="hidden"  value= "$!{redirect_url}">
+            <!-- /.box-header -->
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <font size="2" color="#a9a9a9"> 你也可以批量添加了,添加格式为 渠道代码: code01|code02|code03 渠道名称:渠道01|渠道02|渠道03 注:一定要对应好</font>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+##                            ※渠道代码:<input id="channelCode" name ="channelCode"  type="text" value ="$!{channelCode}" class="form-control" placeholder="code01|code02|code03">
+                            <label for="channelCode">※渠道代码:</label>
+                            <textarea class="form-control" rows="5" id="channelCode" name ="channelCode"  placeholder="code01|code02|code03">$!{channelCode}</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+##                            ※渠道名称:<input id="channel" name ="channel"  type="text" value ="$!{channel}" class="form-control" placeholder="渠道01|渠道02|渠道03">
+                            <label for="channel">※渠道名称:</label>
+                            <textarea class="form-control" rows="5" id="channel" name ="channel"  placeholder="渠道01|渠道02|渠道03">$!{channel}</textarea>
+
+                        </div>
+                    </div>
+                </div>
+                #if(!$id)
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="channelListName">渠道集合名:</label>
+                             <input id="channelListName" name ="channelListName"  type="text" value ="" class="form-control" placeholder="快速定义渠道集合">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="appId">所属app(限android):</label>
+                            <select class="form-control select2" id ="appId" name="appId"  data-placeholder=""  style="width: 100%;">
+                                <option value="gfdapp">gfdapp(功夫贷)</option>
+                                <option value="xqd">xqd(小期贷)</option>
+                                <option value="kxd">kxd(开薪贷)</option>
+                                <option value="xjcs">xjcs(现金超市)</option>
+                                <option value="dds">dds(贷大师)</option>
+                                <option value="qsd">qsd(全速贷)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                #end
+
+                <div class="row">
+                    <div class="col-md-12">
+                    <div class="form-group">
+                    <button class="btn btn-primary btn-sm btn-flat" type="submit" name="action">确定
+                        <i class="mdi-content-send right"></i>
+                    </button>
+                    &nbsp&nbsp
+                    <a class="btn btn-primary btn-sm btn-flat" onclick="javascript:history.back(-1);">返回</a>
+                    </div>
+                    </div>
+                </div>
+        </form>
+
+    </div>
+</section>
+<!-- /.content -->
+
+<div class="control-sidebar-bg"></div>
+<!-- ./wrapper -->
+
+
+
+
+
+

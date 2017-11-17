@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="treeTestPlatform:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="mass-1.1.0.war">
+      <element id="artifact" artifact-name="treeTestPlatform:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,66 @@
+<script src="/resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
+##<script src="/resources/js/index.js"></script>
+<script src="/resources/js/echarts.min.js"></script>
+<script src="https://cdn.bootcss.com/materialize/0.97.5/js/materialize.min.js"></script>
+<script src="/resources/plugins/select2/select2.full.min.js"></script>
+
+<section class="content">
+<div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label>*选择项目</label>
+                <select class="form-control select2" id="project" name="project"  data-placeholder="*选择项目" style="width: 100%;">
+                    <option value="${project}"  selected>$!{projectName}</option>
+                    #foreach ($pr in $optProject.entrySet())
+                        <option value="$pr.key">$pr.value</option>
+                    #end
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row"  >
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>开始时间:</label>
+                <input type="datetime-local" class="datepicker" id = "startDate"  value="${startDate}" style="width:300px;">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>结束时间:</label>
+                <input type="datetime-local" class="datepicker" id = "endDate"  value="${endDate}" style="width:300px;">
+                <button id="indexBussnissBug" class="btn btn-primary btn-sm btn-flat" type="button">查询</button>
+            </div>
+        </div>
+    </div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="box">
+            <div class="box-header with-border">
+                <h3 class="box-title">bug新增和解决趋势</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-md-12" >
+                        <div class="bg-gray-light">
+                            <div id="fmain" style="height:350px;"></div>
+                        </div>
+                        <!-- /.chart-responsive -->
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.box-footer -->
+        </div>
+        <!-- /.box -->
+    </div>
+    <!-- /.col -->
+</div>
+    </section>

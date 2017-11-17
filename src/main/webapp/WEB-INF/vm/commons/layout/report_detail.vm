@@ -1,0 +1,42 @@
+    <!-- Content Header (Page header) -->
+<script src="/resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
+
+        <!-- Main content -->
+        <section class="content">
+##            <div class="col-md-12">
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">$!{project}</h3>
+
+                        <div class="box-tools pull-right">
+                            <a href="/pages/reportDetail.jspa?eid=$!{eidPrevious}" class="btn btn-box-tool" data-toggle="tooltip" title="Previous"><i class="fa fa-chevron-left"></i></a>
+                            <a href="/pages/reportDetail.jspa?eid=$!{eidNext}" class="btn btn-box-tool" data-toggle="tooltip" title="Next"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body no-padding">
+                        <!-- /.mailbox-read-info -->
+                        <table id="emailList" class="table table-bordered table-hover"  style="table-layout:fixed;word-break:break-all;"><tr><td width="100">
+                            <b><font color="#4682B4"> 收件人:</font></b></td><td>$!{toaddress}
+                            </td></tr>
+                            <tr><td>
+                            <b><font color="#4682B4">抄送地址:</font></b></td><td>$!{cc}
+                            </td></tr>
+                            <tr><td>
+                            <b><font color="#4682B4">质量打分:</font></b></td><td>$!{quality}
+                            </td></tr>
+                            <tr><td>
+                            <b><font color="#4682B4">测试进度:</font></b></td><td>$!{title}
+                            </td></tr>
+                            <tr><td>
+                            <b><font color="#4682B4">质量描述:</font></b></td><td>$!{description}
+                            </td></tr>
+                            <tr><td>
+                            <b><font color="#4682B4">柱形图生成:</font></b></td><td>$!{buglist}
+                        <!-- /.mailbox-read-message -->
+                        </td></tr></table>
+                    </div>
+                    </div>
+##                </div>
+                    </section>
+

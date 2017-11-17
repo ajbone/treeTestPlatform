@@ -1,0 +1,187 @@
+<!-- Content Wrapper. Contains page content -->
+    <!-- Content Header (Page header) -->
+<script src="/resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
+
+<script src="/resources/plugins/select2/select2.full.min.js"></script>
+        <!-- Main content -->
+        <section class="content">
+
+            <!-- SELECT2 EXAMPLE -->
+            <div class="box box-info">
+                <div class="box-header">
+                    <i class="fa fa-envelope"></i>
+                    <h3 class="box-title">Quick Email</h3>
+                    <div class="pull-right box-tools">
+##                        <button type="button" class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip" title="Remove">
+##                            <i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+
+                <form action="/SendMailServlet" method="post">
+                    <input id="usernick" name ="usernick"  type="hidden"  value= "$!{userNick}">
+                    <input id="redirect_url" name ="redirect_url"  type="hidden"  value= "$!{redirect_url}">
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                                <div class="form-group">
+                                    <select class="form-control select2" id="project" name="project" multiple="multiple" data-placeholder="*选择项目" style="width: 100%;">
+                                        #foreach ($pr in $optProject.entrySet())
+                                            <option value="$pr.value|$pr.key">$pr.value</option>
+                                        #end
+                                    </select>
+                                </div>
+                        </div>
+                    </div>
+##                    <div class="row">
+##                        <div class="col-md-6">
+##                            <div class="form-group">
+##                                <select class="form-control select2" id ="username" name="username" style="width: 100%;">
+##                                    <option selected="selected" value="">*选择发件人</option>
+##                                    #foreach ($ul in $UserList.entrySet())
+##                                        <option value="$ul.value|$ul.key">$ul.key</option>
+##                                    #end
+##                                </select>
+##                            </div>
+##                        </div>
+##                        <div class="col-md-6">
+##                            <div class="form-group">
+##                                <input type="password" class="form-control" id="password" name ="password" placeholder="*邮箱密码">
+##                            </div>
+##                        </div>
+##                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="txt" class="form-control" id="addressInput" name="toaddressInput" placeholder="收件人地址,多个地址用逗号隔开">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <select class="form-control select2" id="addressSelect" name="toaddressSelect" multiple="multiple" data-placeholder="*可选择收件人地址列表" style="width: 100%;">
+                                    #foreach ($el in $EmailList.entrySet())
+                                        <option value="$el.value">$el.key</option>
+                                    #end
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                             <div class="form-group">
+                                    <select class="form-control select2" id ="total" name="total" data-placeholder="*请选择" style="width: 100%;">
+                                        <option selected="selected" value="一般">*质量打分</option>
+                                        <option value="一般">一般</option>
+                                        <option value="优秀">优秀</option>
+                                        <option value="良好">良好</option>
+                                        <option value="较差">较差</option>
+                                    </select>
+                             </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+##                                <input type="txt" class="form-control" id="ccInput" name="ccInput" placeholder="抄送地址,多个地址用英文逗号隔开,非必填">
+                                <select class="form-control select2" id="ccInput" name="ccInput" multiple="multiple" data-placeholder="抄送地址,非必填" style="width: 100%;">
+                                    #foreach ($el in $EmailList.entrySet())
+                                        <option value="$el.value">$el.key</option>
+                                    #end
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-footer">
+                        <strong>下面是测试日报内容:</strong>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="jindu" name="jindu"  placeholder="*测试进度">
+                            </div>
+                        <div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea class="textarea" id = "editor_id" name="description" placeholder="*质量情况描述" style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-footer">
+                        <strong>*选择要发送的柱形图:</strong>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                 <label>图形生成开始时间:</label>
+                                 <input type="datetime-local" class="datepicker" id = "startdate" name ="startdate" value="$!{startDate}" style="width:200px;"><font color="#dc143c"> (默认起始时间为一个月前)</font>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                             <div class="form-group">
+                                 <input type="checkbox" id="test1" name ="test1" checked="checked" class="minimal"/>
+                                 <label for="test1">未解决bug归属分布</label>
+                             </div>
+                        </div>
+                        <div class="col-md-6">
+                             <div class="form-group">
+                                 <input type="checkbox" id="test2" name ="test2" checked="checked" class="minimal"/>
+                                 <label for="test2">未解决的bug严重程度分布</label>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                             <div class="form-group">
+                                 <input type="checkbox" id="test3" name ="test3" checked="checked" class="minimal"/>
+                                 <label for="test3">每日新增bug趋势图</label>
+                             </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="checkbox" id="test4" name ="test4" checked="checked" class="minimal"/>
+                                <label for="test4">总bug状态分布图</label>
+                            </div>
+                        </div>
+                    </div>
+                <div class="box-footer clearfix">
+                    <button type="submit" class="pull-right btn btn-default" name ="action" id="sendEmail">Send
+                        <i class="fa fa-arrow-circle-right"></i></button>
+                </div>
+            </form>
+            </div>
+        </section>
+        <!-- /.content -->
+
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+##<!-- Bootstrap 3.3.6 -->
+##<script src="/resources/bootstrap/js/bootstrap.min.js"></script>
+##<!-- DataTables -->
+##<script src="/resources/plugins/datatables/jquery.dataTables.min.js"></script>
+##<script src="/resources/plugins/datatables/dataTables.bootstrap.min.js"></script>
+##<!-- SlimScroll -->
+##<script src="/resources/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+##<!-- FastClick -->
+##<script src="/resources/plugins/fastclick/fastclick.js"></script>
+##<!-- AdminLTE App -->
+##<script src="/resources/dist/js/app.min.js"></script>
+##<!-- AdminLTE for demo purposes -->
+##<script src="/resources/dist/js/demo.js"></script>
+<!-- page script -->
+
+
+
+
+

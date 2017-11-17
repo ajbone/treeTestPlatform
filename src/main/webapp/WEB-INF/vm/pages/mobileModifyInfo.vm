@@ -1,0 +1,38 @@
+
+
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" >
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                修改记录
+                <small></small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-mobile"></i> Home</a></li>
+                <li class="active">修改记录</li>
+            </ol>
+        </section>
+
+
+        <section class="content">
+
+            #parse('/commons/layout/mobile_modify_info.vm')
+
+
+
+        </section>
+
+    </div>
+
+
+</div>
+</body>
+
+
+

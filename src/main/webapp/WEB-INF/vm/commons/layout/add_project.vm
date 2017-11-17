@@ -1,0 +1,162 @@
+<!-- Content Wrapper. Contains page content -->
+<!-- Content Header (Page header) -->
+<script src="/resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
+
+<script src="/resources/plugins/select2/select2.full.min.js"></script>
+<!-- Main content -->
+<section class="content">
+
+    <!-- SELECT2 EXAMPLE -->
+    <div class="box box-info">
+        <div class="box-header">
+            <i class="fa fa-plus"></i>
+            <h3 class="box-title">添加项目</h3>
+            <div class="pull-right box-tools">
+##                <button type="button" class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip" title="Remove">
+##                    <i class="fa fa-times"></i></button>
+            </div>
+        </div>
+
+        <form action="/AddProjectServlet" method="post">
+            <input id="id" name ="id"  type="hidden"  value= "$!{id}">
+            <input id="usernick" name ="usernick"  type="hidden"  value= "$!{userNick}">
+            <input id="redirect_url" name ="redirect_url"  type="hidden"  value= "$!{redirect_url}">
+            <input id="platformSelect" name ="platformSelect"  type="hidden"  value= "$!{platform}">
+            <!-- /.box-header -->
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input id="projectname" name ="projectname"  type="text" value ="$!{projectname}" class="form-control" placeholder="※项目名称">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input id="alias" name ="alias"  type="text" value ="$!{alias}" #if ($addnew !="addnew") readonly="readonly" #end   class="form-control" placeholder="※项目别名(最好用英文，必须唯一)">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <select class="form-control select2" id ="appId" name="appId"  data-placeholder="选择appId(限android)"  style="width: 100%;">
+                                #if ($addnew =="addnew")
+                                    <option value="" disabled selected>选择appId(限android)</option>
+                                #else
+                                    <option value="$!{appId}" selected >$!{appId}</option>
+                                #end
+                                <option value="gfdapp">gfdapp(功夫贷)</option>
+                                <option value="xqd">xqd(小期贷)</option>
+                                <option value="kxd">kxd(开薪贷)</option>
+                                <option value="xjcs">xjcs(现金超市)</option>
+                                <option value="dds">dds(贷大师)</option>
+                                <option value="qsd">qsd(全速贷)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <select class="form-control select2" id ="platform" name="platform" #if ($platform) disabled selected #end data-placeholder="*选择平台"  style="width: 100%;">
+                                #if ($addnew =="addnew")
+                                    <option value="" disabled selected>※选择平台</option>
+                                #else
+                                    <option value="$!{platform}" >$!{platform}</option>
+                                #end
+                                <option value="Android">Android</option>
+                                <option value="iOS">iOS</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input id="svn" name ="svn"  type="text"  value= "$!{svn}"  class="form-control" placeholder="※git地址">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input id="gitbranches" name ="gitbranches"  type="text"  value= "$!{gitbranches}"  class="form-control" placeholder="※开发分支（例如：develop）">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <select id ="packagetype" name="packagetype" class="form-control select2" data-placeholder="*选择打包类型"  style="width: 100%;">
+                                #if ($addnew=="addnew")
+                                    <option value="" disabled selected>※选择打包类型</option>
+                                #else
+                                    <option value="$!{task}">$!{task}</option>
+                                #end
+                                #if (${platform}=="iOS")
+                                    <option value="PROD">PROD</option>
+                                    <option value="DEV">DEV</option>
+                                    <option value="SDK">SDK</option>
+                                #elseif(${platform}=="Android")
+                                    <option value="assembleDev">assembleDev</option>
+                                    <option value="assemblePro">assemblePro</option>
+                                    <option value="assembleDebug">assembleDebug</option>
+                                    <option value="assembleOppo">assembleOppo</option>
+                                #else
+                                    <option value="assembleDev">assembleDev(Android)</option>
+                                    <option value="assemblePro">assemblePro(Android)</option>
+                                    <option value="assembleDebug">assembleDebug(Android)</option>
+                                    <option value="assembleOppo">assembleOppo(Android)</option>
+                                    <option value="DEV">DEV(iOS)</option>
+                                    <option value="PROD">PROD(iOS)</option>
+                                    <option value="SDK">SDK(iOS)</option>
+                                #end
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                    <div class="form-group">
+                    <button class="btn btn-primary btn-sm btn-flat" type="submit" name="action">确定
+                        <i class="mdi-content-send right"></i>
+                    </button>
+                    &nbsp&nbsp
+                    <a class="btn btn-primary btn-sm btn-flat" onclick="javascript:history.back(-1);">返回</a>
+                    </div>
+                    </div>
+                </div>
+        </form>
+
+    </div>
+</section>
+<!-- /.content -->
+
+<!-- /.control-sidebar -->
+<!-- Add the sidebar's background. This div must be placed
+     immediately after the control sidebar -->
+<div class="control-sidebar-bg"></div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+##<!-- Bootstrap 3.3.6 -->
+##<script src="/resources/bootstrap/js/bootstrap.min.js"></script>
+##<!-- DataTables -->
+##<script src="/resources/plugins/datatables/jquery.dataTables.min.js"></script>
+##<script src="/resources/plugins/datatables/dataTables.bootstrap.min.js"></script>
+##<!-- SlimScroll -->
+##<script src="/resources/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+##<!-- FastClick -->
+##<script src="/resources/plugins/fastclick/fastclick.js"></script>
+##<!-- AdminLTE App -->
+##<script src="/resources/dist/js/app.min.js"></script>
+##<!-- AdminLTE for demo purposes -->
+##<script src="/resources/dist/js/demo.js"></script>
+<!-- page script -->
+
+
+
+
+

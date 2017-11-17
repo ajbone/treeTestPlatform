@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+	default-autowire="byName">
+	<bean id="velocityConfig"
+		class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+		<property name="resourceLoaderPath" value="/WEB-INF/vm" />
+		<property name="velocityProperties">
+			<props>
+				<prop key="input.encoding">utf-8</prop>
+				<prop key="output.encoding">utf-8</prop>
+				<prop key="velocimacro.library.autoreload">true</prop>
+				<prop key="velocimacro.library">/macros.vm</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.velocity.VelocityLayoutViewResolver">
+		<property name="toolboxConfigLocation">
+			<value>/WEB-INF/toolbox.xml</value>
+		</property>
+		<property name="contentType" value="text/html;charset=utf-8" />
+		<property name="requestContextAttribute" value="rc" />
+		<property name="exposeRequestAttributes">
+			<value>true</value>
+		</property>
+		<property name="layoutUrl" value="commons/layout/main.vm" />
+		<property name="cache" value="true" />
+		<property name="prefix" value="" />
+		<property name="suffix" value=".vm" />
+	</bean>
+</beans>

@@ -1,0 +1,37 @@
+
+
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" >
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                任务列表
+                <small>Versoin1.0</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-bars"></i> Home</a></li>
+                <li class="active">任务列表</li>
+            </ol>
+        </section>
+
+
+        <section class="content">
+
+            #parse('/commons/layout/task_list.vm')
+
+
+        </section>
+
+    </div>
+
+
+</div>
+</body>
+
+
+

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+	<filter>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- Spring/Spring MVC -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:applicationContext.xml</param-value>
+	</context-param>
+	<servlet>
+		<servlet-name>springmvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:springmvc-servlet.xml,classpath:spring-view.xml,</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>SendMailServlet</servlet-name>
+		<servlet-class>com.dashu.datashow.service.SendMailServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SendMailServlet</servlet-name>
+		<url-pattern>/SendMailServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>EditMachineServlet</servlet-name>
+		<servlet-class>com.dashu.datashow.service.EditMobileServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EditMachineServlet</servlet-name>
+		<url-pattern>/EditMachineServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddProjectServlet</servlet-name>
+		<servlet-class>com.dashu.datashow.service.AddProjectServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddProjectServlet</servlet-name>
+		<url-pattern>/AddProjectServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.dashu.datashow.service.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.dashu.datashow.service.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>EditProfileServlet</servlet-name>
+		<servlet-class>com.dashu.datashow.service.EditProfileServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EditProfileServlet</servlet-name>
+		<url-pattern>/EditProfileServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ModifyPasswordServlet</servlet-name>
+		<servlet-class>com.dashu.datashow.service.ModifyPasswordServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ModifyPasswordServlet</servlet-name>
+		<url-pattern>/ModifyPasswordServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddUserServlet</servlet-name>
+		<servlet-class>com.dashu.datashow.service.AddUserServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddUserServlet</servlet-name>
+		<url-pattern>/AddUserServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>InterFaceServlet</servlet-name>
+		<servlet-class>com.dashu.datashow.service.InterFaceServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>InterFaceServlet</servlet-name>
+		<url-pattern>/InterFaceServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddInterfaceServlet</servlet-name>
+		<servlet-class>com.dashu.datashow.service.AddInterfaceServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddInterfaceServlet</servlet-name>
+		<url-pattern>/AddInterfaceServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddTaskServlet</servlet-name>
+		<servlet-class>com.dashu.datashow.service.AddTaskServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddTaskServlet</servlet-name>
+		<url-pattern>/AddTaskServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+	<description>This is the description of my J2EE component</description>
+	<display-name>This is the display name of my J2EE component</display-name>
+	<servlet-name>AddChannelListServlet</servlet-name>
+	<servlet-class>com.dashu.datashow.service.AddChannelListServlet</servlet-class>
+</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddChannelListServlet</servlet-name>
+		<url-pattern>/AddChannelListServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddChannelServlet</servlet-name>
+		<servlet-class>com.dashu.datashow.service.AddChannelServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddChannelServlet</servlet-name>
+		<url-pattern>/AddChannelServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UploadServlet</servlet-name>
+		<servlet-class>com.dashu.datashow.service.UploadServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/UploadServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<welcome-file-list>
+		<welcome-file>/index.html</welcome-file>
+	</welcome-file-list>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+</web-app>

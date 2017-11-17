@@ -1,0 +1,81 @@
+    <!-- Content Header (Page header) -->
+<script src="/resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
+
+#set($i=1)
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- /.box -->
+
+                    <div class="box">
+
+                        <input id="redirect_url" name ="redirect_url"  type="hidden"  value= "$!{redirect_url}">
+##                        <div class="box-header">
+##                            <h3 class="box-title">列表展示</h3>
+##                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                                <table id="info" class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr >
+                                        <th align="center"><b>项目名称：</b><font color="#4682B4"> $!{projectName}</font></th>
+                                        <th align="center"><b>所选渠道集合：</b><font color="#4682B4">$!{channelListName}</font></th>
+                                        <th align="center"><b>上传时间：</b><font color="#4682B4"> $!{date}</font></th>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            <table id="uploadResult" class="table table-bordered table-striped">
+                                <thead>
+                                <tr >
+                                    <th><font color="#4682B4"><b>上传结果:</b></font></th>
+                                </tr>
+                                <tr align="center">
+                                    <th >$!{uploadResult}</th>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+
+
+        </section>
+
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+##<!-- DataTables -->
+<script src="/resources/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/resources/plugins/datatables/dataTables.bootstrap.min.js"></script>
+<!-- page script -->
+<script>
+    $(function () {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false
+        });
+    });
+</script>
+
+    <SCRIPT LANGUAGE=javascript>
+        function del() {
+            var msg = "您真的确定要删除吗？\n\n请确认！";
+            if (confirm(msg)==true){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </SCRIPT>
+

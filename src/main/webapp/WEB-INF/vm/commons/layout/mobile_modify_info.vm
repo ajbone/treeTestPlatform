@@ -1,0 +1,95 @@
+<!-- Content Wrapper. Contains page content -->
+<!-- Content Header (Page header) -->
+<script src="/resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
+
+<script src="/resources/js/mobileModifyInfo.js"></script>
+
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- /.box -->
+
+            <div class="box">
+                <input id="mid" name ="mid"  type="hidden"  value= "${id}">
+
+                <div class="box-body">
+                    <table id="package" class="table table-bordered table-striped">
+                        <thead>
+                        <tr >
+                            <th align="center"><b>平台：</b><font color="#228b22"> $!{platform}</font></th>
+                            <th align="center"><b>手机名称：</b><font color="#228b22">$!{model}</font></th>
+                            <th align="center"><b>手机版本：</b><font color="#228b22">$!{os}</font></th>
+                            <th align="center"><b>手机编号：</b><font color="#228b22">$!{nub}</font></th>
+                            <th align="center"><b>借用人：</b><font color="#228b22">$!{user}</font></th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+
+            ##                        <div class="box-header">
+            ##                            <h3 class="box-title">列表展示</h3>
+            ##                        </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table id="exa" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>更新时间</th>
+                            <th>更新信息</th>
+                        </tr>
+                        </thead>
+                        <div>
+                            <tbody id="mobileModifyInfo">
+                            <!-- ajax填充列表 -->
+                            </tbody>
+                        </div>
+
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+<!-- /.content -->
+
+<!-- /.control-sidebar -->
+<!-- Add the sidebar's background. This div must be placed
+     immediately after the control sidebar -->
+<div class="control-sidebar-bg"></div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+##<!-- Bootstrap 3.3.6 -->
+##<script src="/resources/bootstrap/js/bootstrap.min.js"></script>
+##<!-- DataTables -->
+<script src="/resources/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/resources/plugins/datatables/dataTables.bootstrap.min.js"></script>
+##<!-- SlimScroll -->
+##<script src="/resources/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+##<!-- FastClick -->
+##<script src="/resources/plugins/fastclick/fastclick.js"></script>
+##<!-- AdminLTE App -->
+##<script src="/resources/dist/js/app.min.js"></script>
+##<!-- AdminLTE for demo purposes -->
+##<script src="/resources/dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+    $(function () {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false
+        });
+    });
+</script>
+

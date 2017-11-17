@@ -1,0 +1,38 @@
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                项目质量趋势图
+                <small>Version 1.0.0</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li class="active">项目质量趋势图</li>
+            </ol>
+        </section>
+
+
+        <section class="content">
+
+            #parse('/commons/layout/report_resolve.vm')
+
+            <div class="callout callout-info">
+                <h4>以下为项目BUG概要:<font color="#dc143c" size="2">传送-></font> <a href="http://192.168.5.104/bugfree/index.php/bug/list/${project}" target="_blank"><font color="#dc143c" size="2">http://192.168.5.104/bugfree/index.php/bug/list/${project}</font></a></h4>
+            </div>
+
+            #parse('/commons/layout/bug_detail.vm')
+
+
+        </section>
+
+    </div>
+
+
+</div>
+</body>

@@ -1,0 +1,84 @@
+    <!-- Content Header (Page header) -->
+<script src="/resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
+
+<script src="/resources/js/emailList.js"></script>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- /.box -->
+
+                    <div class="box">
+
+
+##                        <div class="box-header">
+##                            <h3 class="box-title">邮件列表展示</h3>
+                        <!-- /.box-header -->
+                        <div class="box-body table-responsive no-padding">
+                            <table  class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>发件人</th>
+                                    <th>发送时间</th>
+                                    <th>主题</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <div>
+                                    <tbody id="emaillist">
+                                    <!-- ajax填充列表 -->
+                                    </tbody>
+                                </div>
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+    <div class="pagging">
+        <button id="firstPage">首页</button>
+        <button id="previous">上一页</button>
+        <button id="next">下一页</button>
+        <button id="last">尾页</button>
+        共${totalPageSize}条记录
+
+    </div>
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </section>
+
+    <div class="control-sidebar-bg"></div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+##<!-- Bootstrap 3.3.6 -->
+##<script src="/resources/bootstrap/js/bootstrap.min.js"></script>
+##<!-- DataTables -->
+<script src="/resources/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/resources/plugins/datatables/dataTables.bootstrap.min.js"></script>
+##<!-- SlimScroll -->
+##<script src="/resources/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+##<!-- FastClick -->
+##<script src="/resources/plugins/fastclick/fastclick.js"></script>
+##<!-- AdminLTE App -->
+##<script src="/resources/dist/js/app.min.js"></script>
+##<!-- AdminLTE for demo purposes -->
+##<script src="/resources/dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+    $(function () {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false
+        });
+    });
+</script>
+

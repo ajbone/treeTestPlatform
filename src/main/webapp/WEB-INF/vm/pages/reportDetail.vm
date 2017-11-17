@@ -1,0 +1,36 @@
+
+
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" >
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                邮件详情
+                <small>Versoin1.0</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-envelope-o"></i> Home</a></li>
+                <li class="active">邮件详情</li>
+            </ol>
+        </section>
+
+
+        <section class="content">
+
+            #parse('/commons/layout/report_detail.vm')
+
+        </section>
+
+    </div>
+
+
+</div>
+</body>
+
+
+

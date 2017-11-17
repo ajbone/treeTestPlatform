@@ -1,0 +1,38 @@
+
+
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" >
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                添加机器
+                <small>Versoin1.0</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-plus"></i> Home</a></li>
+                <li class="active">添加机器</li>
+            </ol>
+        </section>
+
+
+        <section class="content">
+
+            #parse('/commons/layout/edit_mobile.vm')
+
+
+
+        </section>
+
+    </div>
+
+
+</div>
+</body>
+
+
+

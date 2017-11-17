@@ -1,0 +1,38 @@
+
+
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" >
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                账户列表
+                <small><li><a href="/pages/addUser.jspa?redirect_url=$redirect_url"><i class="fa fa-plus"></i> 添加账号</a></li></small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-reorder"></i> Home</a></li>
+                <li class="active">账户列表</li>
+            </ol>
+        </section>
+
+
+        <section class="content">
+
+            #parse('/commons/layout/account_list.vm')
+
+
+
+        </section>
+
+    </div>
+
+
+</div>
+</body>
+
+
+

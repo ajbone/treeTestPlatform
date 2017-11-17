@@ -1,0 +1,74 @@
+
+
+##<div class="wrapper">
+#set($uid = $request.get("attributes").get("uid"))
+#set($userNick = $request.get("attributes").get("userNick"))
+#set($discription = $request.get("attributes").get("discription"))
+#set($email = $request.get("attributes").get("email"))
+#set($groupname = $request.get("attributes").get("groupname"))
+#set($photo = $request.get("attributes").get("photo"))
+
+<header class="main-header">
+        <!-- Logo -->
+        <a href="/pages/index.jspa" class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><b>测试</b>平台</span>
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"><b>大树测试平台</b></span>
+        </a>
+
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+##                    <input id="usernick" name ="usernick"  type="hidden"  value= "$!{userNick}">
+                    #if (!$userNick)
+                    <li>
+                        <a href="/pages/login.jspa?redirect_url=$redirect_url" >登录</a>
+                    </li>
+                    #else
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="$!{photo}" class="user-image" alt="User Image">
+                            <span class="hidden-xs">$!{userNick}</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- User image -->
+                            <li class="user-header">
+                                <img src="$!{photo}" class="img-circle" alt="User Image">
+
+                                <p>
+                                    $!{discription}
+##                                    <small>Member since Nov. 2016</small>
+                                </p>
+                            </li>
+
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="/pages/editProfile.jspa?uid=$!{uid}&redirect_url=$!{redirect_url}" class="btn btn-default btn-flat">编辑资料</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="/pages/modifyPassword.jspa?uid=$!{uid}&redirect_url=$!{redirect_url}" class="btn btn-default btn-flat">更改密码</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                        #if($userNick=="申兆华")
+                        <li>
+                            <a href="/pages/accountList.jspa" >账号管理</a>
+                        </li>
+                        #end
+                    <!-- Control Sidebar Toggle Button -->
+                    <li>
+                          <a href="/LogoutServlet" >退出</a>
+                    </li>
+                   #end
+                </ul>
+            </div>
+        </nav>
+    </header>

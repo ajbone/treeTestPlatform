@@ -1,0 +1,79 @@
+    <!-- Content Header (Page header) -->
+<script src="/resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
+
+<script src="/resources/js/userList.js"></script>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- /.box -->
+
+                    <div class="box">
+
+
+##                        <div class="box-header">
+##                            <h3 class="box-title">邮件列表展示</h3>
+                        <!-- /.box-header -->
+                        <div class="box-body table-responsive no-padding">
+                            <table  class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th style="width: 8%">序号</th>
+                                    <th style="width: 10%">登录名</th>
+                                    <th style="width: 10%">用户昵称</th>
+                                    <th style="width: 18%">描述</th>
+                                    <th style="width: 10%">邮箱地址</th>
+                                    <th style="width: 10%">用户组</th>
+                                    <th style="width: 22%">头像</th>
+                                    <th style="width: 12%">操作</th>
+                                </tr>
+                                </thead>
+                                <div>
+                                    <tbody id="userList">
+                                    <!-- ajax填充列表 -->
+                                    </tbody>
+                                </div>
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+    <div class="pagging">
+        <button id="firstPage">首页</button>
+        <button id="previous">上一页</button>
+        <button id="next">下一页</button>
+        <button id="last">尾页</button>
+        共${totalPageSize}条记录
+
+    </div>
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </section>
+
+    <div class="control-sidebar-bg"></div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+##<!-- Bootstrap 3.3.6 -->
+##<script src="/resources/bootstrap/js/bootstrap.min.js"></script>
+##<!-- DataTables -->
+<script src="/resources/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/resources/plugins/datatables/dataTables.bootstrap.min.js"></script>
+<!-- page script -->
+<script>
+    $(function () {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false
+        });
+    });
+</script>
+

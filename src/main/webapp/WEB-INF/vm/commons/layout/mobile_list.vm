@@ -1,0 +1,92 @@
+    <!-- Content Header (Page header) -->
+<script src="/resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
+
+    #set($i=1)
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- /.box -->
+
+                    <div class="box">
+
+
+##                        <div class="box-header">
+##                            <h3 class="box-title">列表展示</h3>
+##                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <table id="example1" class="table table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>创建时间</th>
+                                    <th>平台</th>
+                                    <th>编号</th>
+                                    <th>手机名称</th>
+                                    <th>手机版本</th>
+                                    <th>借用人</th>
+                                    <th>借用时间</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <div>
+                                    <tbody >
+                                        #foreach ($mobile in $mobilelist.entrySet())
+                                        <tr>
+                                            <td>$i</td>
+                                            <td><font size='2'>$mobile.value.get(0)</font></td>
+                                            <td><font size='2'>$mobile.value.get(1)</font></td>
+                                            <td><font size='2'>$mobile.value.get(2)</font></td>
+                                            <td><font size='2'>$mobile.value.get(3)</font></td>
+                                            <td><font size='2'>$mobile.value.get(4)</font></td>
+                                            <td><font size='2'>$mobile.value.get(5)</font></td>
+                                            <td><font size='2'>$mobile.value.get(6)</font></td>
+                                            <td ><font size='2'><a href="/pages/editMobile.jspa?edit=$mobile.key" >编辑</a>&nbsp;&nbsp;&nbsp;<a href="/pages/mobileModifyInfo.jspa?mid=$mobile.key" >记录</a></font></td>
+                                        </tr>
+                                            #set($i=$i+1)
+                                        #end
+                                    </tbody>
+                                </div>
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </section>
+
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+##<!-- Bootstrap 3.3.6 -->
+##<script src="/resources/bootstrap/js/bootstrap.min.js"></script>
+##<!-- DataTables -->
+<script src="/resources/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/resources/plugins/datatables/dataTables.bootstrap.min.js"></script>
+##<!-- SlimScroll -->
+##<script src="/resources/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+##<!-- FastClick -->
+##<script src="/resources/plugins/fastclick/fastclick.js"></script>
+##<!-- AdminLTE App -->
+##<script src="/resources/dist/js/app.min.js"></script>
+##<!-- AdminLTE for demo purposes -->
+##<script src="/resources/dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+    $(function () {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false
+        });
+    });
+</script>
+

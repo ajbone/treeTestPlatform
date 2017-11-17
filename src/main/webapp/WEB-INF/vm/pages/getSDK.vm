@@ -1,0 +1,37 @@
+
+
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" >
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                数据输出SDK打包
+                <small>$!{platform}</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-suitcase"></i> Home</a></li>
+                <li class="active">$!{projectname}</li>
+            </ol>
+        </section>
+
+
+        <section class="content">
+
+            #parse('/commons/layout/sdk_list.vm')
+
+
+        </section>
+
+    </div>
+
+
+</div>
+</body>
+
+
+

@@ -1,0 +1,152 @@
+
+
+#set($Integer = 0)
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" >
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                操作失败
+                <small>Error!</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-remove"></i> Home</a></li>
+                <li class="active">操作失败</li>
+            </ol>
+        </section>
+
+
+        <section class="content">
+
+            <div class="error-page">
+                <h2 class="headline text-red">Fail</h2>
+
+                <div class="error-content">
+                    <h3><i class="fa fa-warning text-red"></i> 操作失败!检查下原因</h3>
+
+                    <p><b>出错信息：</b></br><font color="#FF0000">
+
+                        #if($NOexist!=-1)
+                            #if ($NOexist==0)
+                                #if ($mobilePlatform=='kong')手机平台不能为空</br>#end
+                                #if ($model=='')手机名称不能为空</br>#end
+                                #if ($os=='')手机版本不能为空</br>#end
+                                #if ($NO=='')手机编号不能为空</br>#end
+                                #if ($user=='')使用人不能为空</br>#end
+                                #if ($modify=='')借用时间不能为空</br>#end
+                            #else
+                                手机编号已经存在,请换一个！</br>
+                            #end
+                        #end
+                        #if($aliasExist!=-1)
+                            #if ($aliasExist==0)
+                                #if ($projectname=='')项目名称不能为空</br>#end
+                                #if ($alias=='')项目别名不能为空</br>#end
+                                #if ($platform=='kong')平台不能为空</br>#end
+                                #if ($svn=='')svn地址不能为空</br>#end
+                                #if ($packagetype=='kong')打包类型不能为空</br>#end
+                                #if ($gitbranches=='')git分支不能为空</br>#end
+                            #end
+                            #if ($aliasExist !=0&&$aliasExist)
+                                别名已经存在,请换一个！</br>
+                            #end
+                        #end
+                        #if($report)
+
+                            #if ($password !='')
+                                #if ($projectName=='')项目名称不能为空</br> #end
+                                #if ($projectName !='')项目名称：$!{projectName}</br>
+                                    收件人列表：$!{toAddress}</br>
+                                    抄送人列表：$!{ccList}</br>
+                                    检查下收件人列表，是不是有人离职了，邮箱被注销了。
+                                #end
+                            #else
+                                邮箱密码没输入
+                            #end
+                        #end
+                        #if($username=="notExist")
+                            用户不存在
+                        #elseif($pwd=="fail")
+                            密码错误
+                        #end
+
+
+                        #if($oldPassword=="fail")
+                            原密码输入不正确！</br>
+                        #end
+                        #if($oldPassword=="kong")
+                            新密码不能为空！</br>
+                        #elseif($newPassword=="notEquals")
+                            新密码两次输入不相同！</br>
+                        #end
+
+                        #if($editphone=="no")
+                            不能修改别人的记录，只能修改借用人是本人的记录哦！</br>
+                        #end
+
+                        #if($projectExist=="noproject")
+                            项目不存在，检查下地址！点击<a href="/pages/index.jspa">跳转到首页</a> </br>
+                        #end
+                        #if($fillFirst=="no")
+                            必填项不能为空! </br>
+                        #end
+                        #if($permission=="no")
+                            你没有权限操作! </br>
+                        #end
+                    #if($taskAliasExist!=-1)
+                        #if ($taskAliasExist==0)
+                            #if ($taskName=='')任务名称不能为空</br>#end
+                            #if ($taskAlias=='')任务别名不能为空</br>#end
+                            #if ($addressInput=='')发件地址不能为空</br>#end
+                            #if ($action=='')构建命令不能为空</br>#end
+                            #if ($git=='')git地址不能为空</br>#end
+                            #if ($git_branches=='')git分支不能为空</br>#end
+                        #elseif ($taskAliasExist !=0 &&$taskAliasExist)
+                            别名已经存在,请换一个！</br>
+                        #end
+                    #end
+
+                        #set( $errorCode = [404,302,500,502] )
+                        #foreach( $result in $errorCode )
+                            #if( $result ==$pageNotFound)
+                                调用接口时发生<font size="7" color="blue"> $pageNotFound</font> 错误, 检查下接口地址和测试环境!
+                            #end
+                        #end
+                        #if ($timeout=="yes")
+                            超时了,检查下网络或者重试一次!
+                        #end
+
+                        #if ($doChannelPackage=="no")
+                            基础包找不到!请先打包!
+                        #end
+
+                        #if ($style=="wrong")
+                            你输入的渠道包格式不对,渠道代码和渠道名称的数量一定要一致!
+                        #end
+
+
+                    </font>
+                    </p>
+
+                    <div class="input-group-btn">
+                        <a class="btn btn-primary btn-sm btn-flat" onclick="javascript:history.back(-1);">返回</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
+
+
+</div>
+</body>
+
+
+

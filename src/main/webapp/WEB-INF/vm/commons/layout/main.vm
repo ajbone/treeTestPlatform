@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    #parse('/commons/layout/head.vm')
+<body class="hold-transition skin-blue sidebar-mini">
+    #parse('/commons/layout/head_1.vm')
+    #parse('/commons/layout/sidebar.vm')
+    $screen_content
+    #parse('/commons/layout/foot.vm' )
+</body>
+</html>
+
+
+##<div id="header">#parse('/commons/layout/head.vm')
+##</div>
+###parse('/commons/layout/head_1.vm')
+##<!-- Left side column. contains the logo and sidebar -->
+###parse('/commons/layout/sidebar.vm')
+##<body>
+## <div id="content">
+##    <div id= "main" >$screen_content</div>
+##</div>
+##</body>
+##<div id= "footer" >#parse('/commons/layout/foot.vm' )</div>

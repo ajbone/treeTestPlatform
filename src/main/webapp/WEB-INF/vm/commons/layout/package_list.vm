@@ -1,0 +1,445 @@
+<!-- Content Wrapper. Contains page content -->
+    <!-- Content Header (Page header) -->
+<script src="/resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
+
+<script src="/resources/js/androidHistory.js"></script>
+#set($channelActive = $request.get("attributes").get("channelActive"))
+#set($channelArraySelect = $request.get("attributes").get("channelArraySelect"))
+#set($i=1)
+#set($k=1)
+#set($h=0)
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- /.box -->
+
+                    <div class="box box-primary">
+                                <input id="pid" name ="pid"  type="hidden"  value= "$!{pid}">
+                                <input id="apkKeyWord" name ="apkKeyWord"  type="hidden"  value= "$!{alias}">
+                                <input id="pagtype" name ="pagtype"  type="hidden"  value= "$!{task}">
+                                <input id="usernick" name ="usernick"  type="hidden"  value= "$!{userNick}">
+
+                        <div class="box-body">
+                            <table id="package" class="table table-bordered table-striped">
+                                <thead>
+                                <tr >
+                                    <th align="center"><b>项目名称：</b><font color="#4682B4"> ${projectname}</font></th>
+                                    <th align="center"><b>项目别名：</b><font color="#4682B4">${alias}</font></th>
+                                    <th align="center"><b>git地址：</b><font color="#4682B4">${svn}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    #if($platform =="iOS")<button id="podInstall" class="btn btn-primary btn-sm btn-flat" type="button" onclick="javascript:{this.disabled=true;}" >执行pod update</button></font></th>
+                                    #end</font></th>
+                                    <th align="center"><b>分支：</b><font color="#4682B4">${gitbranches}</font></th>
+                                </tr><tr>
+                                    <th align="center"><b>打包类型：</b><font color="#4682B4">${task}</font></th>
+                                    <th align="center"><b>创建/修改者：</b><font color="#4682B4">${creater}&nbsp;/&nbsp;${updater}</font></th>
+                                    <th align="center"><b>修改时间：</b><font color="#4682B4">${modify}</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/pages/addProject.jspa?edit=${pid}&redirect_url=$redirect_url"><font color="#AE0000"><i class="fa fa-plus">&nbsp;编辑项目</i></font></a></th>
+                                    <th align="center"><button id="historypackaging" class="btn btn-block btn-primary btn-sm" type="button" onclick="javascript:{this.disabled=true;}" >点击打包<i class="mdi-content-send right"></i></button></th>
+                                </tr>
+                                </thead>
+                                </table>
+                            </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Custom Tabs -->
+                                <div class="nav-tabs-custom">
+                                    <ul class="nav nav-tabs">
+                                        #if($channelActive =="channelTabDisplay")
+                                        <li><a href="#tab_1" data-toggle="tab">测试包</a></li>
+                                        <li class="active"><a href="#tab_2" data-toggle="tab">#if($platform=="Android")
+                                            渠道包#end</a></li>
+                                            #else
+                                                <li class="active"><a href="#tab_1" data-toggle="tab">测试包</a></li>
+                                                <li><a href="#tab_2" data-toggle="tab">#if($platform=="Android")
+                                                渠道包#end</a></li>
+                                            #end
+                        #if($platform=="Android")<li class="pull-right"><font color="#AE0000"><a href="/pages/channelArrayList.jspa"><i class="fa fa-plus">&nbsp;渠道配置&nbsp;&nbsp;</i></a></font></li>
+                        #end
+                                    </ul>
+                                    <div class="tab-content">
+                        #if($channelActive =="channelTabDisplay")
+                        <div class="tab-pane" id="tab_1">
+                             #else
+                             <div class="tab-pane active" id="tab_1">
+                        #end
+
+##                        <div class="box-body">
+                            <table id="example2" class="table table-bordered table-hover"  style="table-layout:fixed;word-break:break-all;">
+                                <thead>
+                                <tr>
+                                    <th style="width:5%;"><font size='2'>序</font></th>
+                                    <th style="width:8%;"><font size='2'>时间</font></th>
+                                    <th style="width:8%;"><font size='2'>打包人</font></th>
+                                    <th style="width:7%;"><font size='2'>分支</font></th>
+                                    <th style="width:7%;"><font size='2'>类型</font></th>
+                                    <th style="width:9%;"><font size='2'>构建状态</font></th>
+                                    <th style="width:18%;"><font size='2'>包名</font></th>
+                                    <th style="width:8%;"><font size='2'>二维码</font></th>
+                                    <th style="width:8%;"><font size='2'>GitLog</font></th>
+                                    <th style="width:6%;"><font size='2'>Log</font></th>
+                                    <th style="width:7%;"><font size='2'>标记</font></th>
+                                </tr>
+                                </thead>
+                                #foreach ($package in $packagelist.entrySet())
+                                    <tr><td>$i</td>
+                                        <td><font size='2'>$!package.value.get(0)</font></td>
+                                        <td><font size='2'>$!package.value.get(1)</font></td>
+                                        <td><font size='2'>$!package.value.get(11)</font></td>
+                                        <td><font size='2'>$!package.value.get(2)</font></td>
+                                        #if($package.value.get(3)=="正在打包")
+                                            <td><font size='2'><span class="label label-primary">$package.value.get(3)</span></font></td>
+                                        #elseif($package.value.get(3)=="打包成功")
+                                            <td><font size='2'><span class="label label-success">$package.value.get(3)</span></font></td>
+                                        #elseif($package.value.get(3)=="打包失败")
+                                            <td><font size='2'><span class="label label-danger">$package.value.get(3)</span></font></td>
+                                        #elseif($package.value.get(3)=="打包中断")
+                                            <td><font size='2'><span class="label label-warning">$package.value.get(3)</span></font></td>
+                                        #end
+##                                        <td><font size='2'>$package.value.get(3)</font></td>
+                                        #set($apk=$package.value.get(5).split(","))
+                                        #set($j=0)
+                                        <td><font size='2'>
+                                            #foreach($apkname in $apk)
+                                                <a href="$package.value.get(4).split(",")[$j]">$apkname</a><p>
+                                                #set($j=$j+1)
+                                            #end
+##                                            <a href="$package.value.get(4).split(",")[0]">$package.value.get(5).split(",")[0]</a>
+                                        </font></td>
+                                        #if($package.value.get(6)=="")
+                                            <td ></td>
+                                        #else
+                                            #set($apkerweima=$package.value.get(6).split(","))
+                                            <td>
+                                                #foreach($apkPhoto in $apkerweima)
+                                                    <a href="$apkPhoto" target="_blank" onclick="window.open(this.href,'','width=250,height=278,top='+(screen.height-400)/2+',left='+(screen.width-400)/2 + '');return false"><img id="img" style="width:25px;height:25px;" alt ="" src="$apkPhoto" /></a>
+                                                    #set($j=$j+1)
+                                                #end
+                                            </td>
+                                        #end
+                                        <td><font size='2'>
+##                                            <a href="$package.value.get(7)" target="_blank" >$!package.value.get(8).split("Au")[0]</a>
+                                            <a href="$package.value.get(7)" target="_blank" >查看</a>
+                                        </font></td>
+                                        <td><font size='2'><a href="$package.value.get(9)" target="_blank">查看</a></font></td>
+                                        <td><font size='2'>
+                                        #if($!package.value.get(10) =='不能用')
+                                            <button type="button" class="btn btn-block btn-danger btn-xs"><a href="/pages/getPackage.jspa?pid=$!{pid}&markId=$!package.key" ><font color="white">不能用</font></a></button></font></td>
+                                        #elseif($!package.value.get(10) =='能用')
+                                            <button type="button" class="btn btn-block btn-success btn-xs"><a href="/pages/getPackage.jspa?pid=$!{pid}&markId=$!package.key" ><font color="white">能用</font></a></button></font></td>
+                                        #elseif($!package.value.get(10) =='未标记')
+                                            <button type="button" class="btn btn-block btn-primary btn-xs"><a href="/pages/getPackage.jspa?pid=$!{pid}&markId=$!package.key" ><font color="white">未标记</font></a></button></font></td>
+                                        #end
+                                    </tr>
+                                    #set($i=$i+1)
+                                #end
+
+                            </table>
+##                        </div>
+
+                            </div>
+                                <!-- /.tab-pane -->
+                            #if($platform=="Android")
+                                #if($channelActive =="channelTabDisplay")
+                                    <div class="tab-pane active" id="tab_2">
+                                    #else
+                                    <div class="tab-pane" id="tab_2">
+                                        #end
+
+                                    <table id="releasePackage" class="table table-bordered table-hover"  style="table-layout:fixed;word-break:break-all;">
+                                        <thead>
+                                        <tr>
+                                            <th style="width:10%;"><font size='2'>打包时间</font></th>
+                                            <th style="width:6%;"><font size='2'>打包人</font></th>
+                                            <th style="width:7%;"><font size='2'>打包类型</font></th>
+                                            <th style="width:7%;"><font size='2'>构建状态</font></th>
+                                            <th style="width:15%;"><font size='2'>包名</font></th>
+                                            <th style="width:6%;"><font size='2'>二维码</font></th>
+                                            <th style="width:6%;"><font size='2'>GitLog</font></th>
+                                            <th style="width:6%;"><font size='2'>JLog</font></th>
+                                            <th style="width:9%;"><font size='2'>生成正式包</font></th>
+                                        </tr>
+                                        </thead>
+                                        <tr>
+                                            #if($releasePackageLength == 1)
+                                                <td></td><td></td><td></td><td></td><td>没有主干release包</td><td></td><td></td><td></td>
+                                            #else
+                                            <td><font size='2'>$releasePackageList.get(1)</font></td>
+                                            <td><font size='2'>$releasePackageList.get(2)</font></td>
+                                            <td><font size='2'>$releasePackageList.get(3)</font></td>
+                                            #if($releasePackageList.get(4)=="正在打包")
+                                                <td><font size='2'><span class="label label-primary">$releasePackageList.get(4)</span></font></td>
+                                            #elseif($releasePackageList.get(4)=="打包成功")
+                                                <td><font size='2'><span class="label label-success">$releasePackageList.get(4)</span></font></td>
+                                            #elseif($releasePackageList.get(4)=="打包失败")
+                                                <td><font size='2'><span class="label label-danger">$releasePackageList.get(4)</span></font></td>
+                                            #elseif($releasePackageList.get(4)=="打包中断")
+                                                <td><font size='2'><span class="label label-warning">$releasePackageList.get(4)</span></font></td>
+                                            #end
+                                            #set($apk=$releasePackageList.get(5).split(","))
+                                            #set($j=0)
+                                            <td>
+                                                <font size='2'>
+                                                #foreach($apkname in $apk)
+                                                    <a href="$releasePackageList.get(6).split(",")[$j]">$apkname</a><p>
+                                                    #set($j=$j+1)
+                                                #end
+                                            </font>
+                                            </td>
+                                            #if($releasePackageList.get(7)=="")
+                                                <td ></td>
+                                            #else
+                                                #set($apkerweima=$releasePackageList.get(7).split(","))
+                                                <td>
+                                                    #foreach($apkPhoto in $apkerweima)
+                                                        <a href="$apkPhoto" target="_blank" onclick="window.open(this.href,'','width=250,height=278,top='+(screen.height-400)/2+',left='+(screen.width-400)/2 + '');return false"><img id="img" style="width:25px;height:25px;" alt ="" src="$apkPhoto" /></a>
+                                                        #set($j=$j+1)
+                                                    #end
+                                                </td>
+                                            #end
+                                            <td><font size='2'>
+                                                <a href="$releasePackageList.get(8)" target="_blank" >查看</a>
+                                            </font></td>
+                                            <td><font size='2'><a href="$releasePackageList.get(10)" target="_blank">查看</a></font></td>
+                                            #end
+                                                 <td align="center"><button id="doRelease" class="btn btn-block btn-primary btn-sm" type="button" onclick="javascript:{this.disabled=true;}" >打正式主干包<i class="mdi-content-send right"></i></button></td>
+                                        </tr>
+                                        </table>
+                                    ##渠道包打包部分
+                                    <table id="Channel" class="table table-bordered"  style="table-layout:fixed;word-break:break-all;">
+                                        <thead>
+                                        <tr>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            #if ($!newApkName)
+                                                            <div  id = "download_jiagu" style ="float:left;  display:block;">点击下载取包(加固后的):&nbsp;&nbsp;&nbsp;<a href="$newApkUrl">$!newApkName</a></div>
+                                                                #end
+                                                            <div id = "wait_jiagu" style ="float:left; display:none"><font color="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正在加固!</font>&nbsp;&nbsp;<i class="fa fa-refresh fa-spin"></i> </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <div style ="float:left; ">
+                                                            <button id="jiagu_360" style="width: 120px;display:block" class="btn btn-block btn-primary btn-sm" type="submit" name="action"  onclick="javascript:{this.disabled=true;jiagu();}">
+                                                                只进行360加固
+                                                                <i class="mdi-content-send right"></i></button></div>
+                                                            #if ($!newApkName)
+                                                            <div id = "modify_jiagu" style ="float:left;  display:block;"><font color="red">&nbsp;&nbsp;&nbsp;更新时间:$!apkModiyTime</font> </div>
+                                                            #end
+                                                            <div id = "package_jiagu" style ="float:left; display:none"><font color="red">&nbsp;&nbsp;&nbsp;请稍等!</font>&nbsp;&nbsp;<i class="fa fa-refresh fa-spin"></i> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr><td>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <form action="/UploadServlet" method="post">
+                                                            <input id="pid" name ="pid"  type="hidden"  value= "$!{pid}">
+                                                            <input id="jobId" name ="jobId"  type="hidden"  value= "$!{newJobId}">
+                                                            <div><div style ="float:left">*选择渠道集合:&nbsp;&nbsp;</div><div style ="float:left; width:350px; "><select class="form-control select2" id ="channelArraySelect" name="channelArraySelect" data-placeholder="*选择渠道集合" style="width: 100%;">
+                                                        #foreach ($channelArray in $channelArrayList.entrySet())
+                                                            #if($channelArray.key==$channelArraySelect)
+                                                                <option selected="selected" value="$channelArray.key">$channelArray.value.get(0)</option>
+                                                            #elseif($h==0)
+                                                                <option selected="selected" value="$channelArray.key">$channelArray.value.get(0)</option>
+                                                            #else
+                                                                <option  value="$channelArray.key">$channelArray.value.get(0)</option>
+                                                            #end
+                                                            #set($h=$h+1)
+                                                        #end
+                                                        </select>
+                                                            </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <div id ="channelPackage" style="display:block" >
+                                                            <div style ="float:left; width:120px; "><button id="channelPackage1234" style="width: 120px;display:block" class="btn btn-block btn-primary btn-sm" type="button" #if($releasePackageLength == 1||$packageStatus == 0) disabled #end onclick="javascript:{this.disabled=true;myFunction();}" >
+                                                                #if($packageStatus == 0)
+                                                                    <div id="divChannel">正在打包&nbsp;&nbsp;<i class="fa fa-refresh fa-spin"></i></div>
+                                                                    #else
+                                                                    生成渠道包
+                                                                    #end<i class="mdi-content-send right"></i></button>
+                                                            </div>
+                                                            &nbsp;&nbsp;<div id="killPackages" style ="float:left; width:120px;#if($packageStatus == 0) display:block #else display:none #end ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/pages/getPackage.jspa?pid=${pid}&killPackage=${pid}"><font color="#AE0000"><i class="fa fa-hand-o-right">&nbsp;点击可强制结束</i></font></a>
+                                                            </div>
+                                                        </div>
+                                                        <div id ="buttonDisplay" style="display:none" >
+                                                            <div style ="float:left; width:120px; "><button id="buttonDisplay123" style="width: 120px;" class="btn btn-block btn-primary btn-sm" type="button"  disabled>
+                                                                <div id="divChannel">正在打包&nbsp;&nbsp;<i class="fa fa-refresh fa-spin"></i></div><i class="mdi-content-send right"></i></button>
+                                                            </div>
+                                                            &nbsp;&nbsp;<div style ="float:left; width:120px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/pages/getPackage.jspa?pid=${pid}&killPackage=${pid}"><font color="#AE0000"><i class="fa fa-hand-o-right">&nbsp;点击强制结束</i></font></a>
+                                                                </div>
+                                                        </div>
+##
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                        <tr><td>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <div><font size='2' color="#4682B4"> <b>先在上面选择要上传的渠道,然后点击"上传到OSS",包会传到OSS存储空间.</b></font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                         <div style ="float:left; width:120px; "><button id="uploadPackage" style="width: 120px;display:block" class="btn btn-block btn-primary btn-sm" type="submit" name="action" #if($releasePackageLength == 1||$packageStatus == 0) disabled #end onclick="uploadStatus()" >
+                                                            上传到OSS
+                                                            <i class="mdi-content-send right"></i></button>
+                                                         </div>
+                                                        <div id ="uploadStatus" style ="float:left; width:220px; display:none">&nbsp;&nbsp;&nbsp;&nbsp;<font color="#AE0000">正在上传...切勿重复点击</font>&nbsp;&nbsp;<i class="fa fa-refresh fa-spin"></i></div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            </form>
+                                        </td>
+                                        </tr>
+                                        </thead>
+                                    </table>
+
+                                    ##渠道包列表
+                                    <table id="releasePackageList" class="table table-bordered table-hover" style="table-layout:fixed;word-break:break-all;">
+                                        <thead>
+                                        <tr><th style="width:7%;"><font size='2'>序</font></th>
+                                            <th style="width:12%;"><font size='2'>打包时间</font></th>
+                                            <th style="width:10%;"><font size='2'>打包人</font></th>
+                                            <th style="width:15%;"><font size='2'>渠道集合</font></th>
+                                            <th style="width:12%;"><font size='2'>渠道代码</font></th>
+                                            <th style="width:19%;"><font size='2'>渠道名称</font></th>
+                                            <th style="width:18%;"><font size='2'>包名</font></th>
+                                            <th style="width:10%;"><font size='2'>二维码</font></th>
+                                            <th style="width:9%;"><font size='2'>标记</font></th>
+                                        </tr>
+                                        </thead>
+                                        #foreach ($releaseApk in $releaseApkList.entrySet())
+                                        <tr><td>$k</td>
+                                            <td><font size='2'>$releaseApk.value.get(0)</font></td>
+                                            <td><font size='2'>$releaseApk.value.get(1)</font></td>
+                                            <td><font size='2'>$releaseApk.value.get(9)</font></td>
+                                            <td><font size='2'>$releaseApk.value.get(2)</font></td>
+                                            <td><font size='2'>$releaseApk.value.get(3)</font></td>
+                                            <td><font size='2'><a href="$releaseApk.value.get(5)">$releaseApk.value.get(4)</a></font></td>
+                                            <td><a href="$releaseApk.value.get(6)" target="_blank" onclick="window.open(this.href,'','width=250,height=278,top='+(screen.height-400)/2+',left='+(screen.width-400)/2 + '');return false"><img id="img" style="width:25px;height:25px;" alt ="" src="$releaseApk.value.get(6)" /></a></td>
+                                            <td><font size='2'>
+                                            #if($!releaseApk.value.get(7) =='未上传')
+                                                <span class="label label-primary">$!releaseApk.value.get(7)</span>
+                                            #elseif($!releaseApk.value.get(7) =='上传成功')
+                                                <span class="label label-success">$!releaseApk.value.get(7)</span>
+                                            #elseif($!releaseApk.value.get(7) =='上传失败')
+                                                <span class="label label-danger">$!releaseApk.value.get(7)</span>
+                                            #end
+                                            </font></td>
+                                        </tr>
+                                            #set($k=$k+1)
+                                        #end
+                                        </table>
+                                    #end
+
+
+                                </div>
+                                <!-- /.tab-pane -->
+                                </div>
+                                <!-- /.tab-content -->
+                            </div>
+                                <!-- nav-tabs-custom -->
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </section>
+        <!-- /.content -->
+
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+##<!-- Bootstrap 3.3.6 -->
+##<script src="/resources/bootstrap/js/bootstrap.min.js"></script>
+##<!-- DataTables -->
+<script src="/resources/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/resources/plugins/datatables/dataTables.bootstrap.min.js"></script>
+##<!-- SlimScroll -->
+##<script src="/resources/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+##<!-- FastClick -->
+##<script src="/resources/plugins/fastclick/fastclick.js"></script>
+##<!-- AdminLTE App -->
+##<script src="/resources/dist/js/app.min.js"></script>
+##<!-- AdminLTE for demo purposes -->
+##<script src="/resources/dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+    $(function () {
+        $("#example1").DataTable();
+        $("#releasePackageList").DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false
+        });
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false
+        });
+    });
+</script>
+<script language="JavaScript">
+    function myrefresh()
+    {
+        window.location.reload();
+    }
+    setTimeout('myrefresh()',3600000); //指定1hour刷新一次
+</script>
+
+
+<script>
+    function myFunction() {
+        document.getElementById('buttonDisplay').style.display='block';
+        document.getElementById('channelPackage').style.display='none';
+        document.getElementById('killPackages').style.display='block';
+    }
+</script>
+
+<script>
+    function jiagu() {
+        document.getElementById('download_jiagu').style.display='none';
+        document.getElementById('wait_jiagu').style.display='block';
+        document.getElementById('modify_jiagu').style.display='none';
+        document.getElementById('package_jiagu').style.display='block';
+    }
+</script>
+
+<script>
+    function uploadStatus() {
+        document.getElementById('uploadStatus').style.display='block';
+    }
+</script>

@@ -1,0 +1,179 @@
+<!-- Content Wrapper. Contains page content -->
+    <!-- Content Header (Page header) -->
+<script src="/resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
+
+<script src="/resources/js/dataPackage.js"></script>
+#set($userNick = $request.get("attributes").get("userNick"))
+#set($userGroup = $request.get("attributes").get("groupname"))
+#set($i=1)
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- /.box -->
+##                    <input id="sid" name ="sid"  type="hidden" value= "$!{sid}">
+
+                    <div class="box">
+                        <div class="box-body">
+                            <table id="package" class="table table-bordered table-striped">
+                                <thead>
+                                <tr >
+                                    <th align="center"><b>sdk-andriod地址：</b><font color="#4682B4"> $!{androidGit}</font></th>
+                                    <th align="center"><b>平台：</b><font color="#4682B4"> Android</font></th>
+                                    <th align="center"><b>分支：</b><font color="#4682B4"> $!{androidGitBranches}</font></th>
+                                </tr><tr >
+                                    <th align="center"><b>TFLibraryContainer地址：</b><font color="#4682B4"> $!{androidGitTwo}</font></th>
+                                    <th align="center"><b>平台：</b><font color="#4682B4"> Android</font></th>
+                                    <th align="center"><b>分支：</b><font color="#4682B4"> $!{androidGitTwoBranches}</font></th>
+                                </tr><tr>
+                                    <th align="center"><b>TreefinanceService地址：</b><font color="#4682B4"> $!{iOSGit}</font></th>
+                                    <th align="center"><b>平台：</b><font color="#4682B4"> iOS</font></th>
+                                    <th align="center"><b>分支：</b><font color="#4682B4"> $!{iOSGitBranches}</font></th>
+                                </tr><tr>
+                                    <th align="center"><b>最新输出版本：</b>
+                                        #foreach ($sdk in $sdkList.entrySet())
+                                        <font color="red">[$sdk.key:$sdk.value.get(0)]</font>&nbsp;&nbsp;&nbsp;
+                                        #end
+                                        </th>
+                                    <th align="center"><b>批次：</b><font color="#4682B4">$newGroupName</font></th>
+                                    #if ($userNick)
+                                        <th align="center"><button id="Packaging" class="btn btn-primary btn-block btn-flat" type="button" onclick="javascript:{this.disabled=true;}" >点击打包</button></th>
+                                    #else
+                                        <th align="center"><button id="login" class="btn btn-primary btn-block btn-flat" type="button"  ><a href="/pages/login.jspa?redirect_url=$redirect_url" ><font color="white">点击打包</font></a></button></th>
+                                    #end
+                                </tr>
+                                </thead>
+                                </table>
+                            </div>
+
+##                        <div class="box-header">
+##                            <h3 class="box-title">列表展示</h3>
+##                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <table id="example1" class="table table-bordered table-hover"  style="table-layout:fixed;word-break:break-all;">
+                                <thead>
+                                <tr>
+                                    <th style="width:4%;"><font size='2'>序</font></th>
+                                    <th style="width:7%;"><font size='2'>打包时间</font></th>
+                                    <th style="width:6%;"><font size='2'>打包人</font></th>
+                                    <th style="width:7%;"><font size='2'>批次</font></th>
+                                    <th style="width:10%;"><font size='2'>工程名</font></th>
+                                    <th style="width:7%;"><font size='2'>状态</font></th>
+                                    <th style="width:10%;"><font size='2'>包名</font></th>
+                                    <th style="width:5%;"><font size='2'>版本</font></th>
+                                    <th style="width:6%;"><font size='2'>GitLog</font></th>
+                                    <th style="width:5%;"><font size='2'>Log</font></th>
+                                    <th style="width:5%;"><font size='2'>输出</font></th>
+                                </tr>
+                                </thead>
+                                #foreach ($package in $packagelist.entrySet())
+                                    <tr><td>$i</td>
+                                        <td><font size='2'>$package.value.get(0)</font></td>
+                                        <td><font size='2'>$package.value.get(1)</font></td>
+                                        <td><font size='2'>$package.value.get(2)</font></td>
+                                        <td><font size='2'>$package.value.get(11)</font></td>
+                                        #if($package.value.get(3)=="正在打包")
+                                            <td><font size='2'><span class="label label-primary">$package.value.get(3)</span></font></td>
+                                        #elseif($package.value.get(3)=="打包成功")
+                                            <td><font size='2'><span class="label label-success">$package.value.get(3)</span></font></td>
+                                        #elseif($package.value.get(3)=="打包失败")
+                                            <td><font size='2'><span class="label label-danger">$package.value.get(3)</span></font></td>
+                                        #elseif($package.value.get(3)=="打包中断")
+                                            <td><font size='2'><span class="label label-warning">$package.value.get(3)</span></font></td>
+                                        #end
+##                                        <td><font size='2'>$package.value.get(3)</font></td>
+                                        #set($apk=$package.value.get(4).split(","))
+                                        #set($j=0)
+                                        <td><font size='2'>
+                                            #foreach($apkname in $apk)
+                                                <a href="$package.value.get(5).split(",")[$j]">$apkname</a><p>
+                                                #set($j=$j+1)
+                                            #end
+##                                            <a href="$package.value.get(4).split(",")[0]">$package.value.get(5).split(",")[0]</a>
+                                        </font></td>
+                                            <td >$package.value.get(6)</td>
+                                        <td><font size='2'>
+                                            <a href="$package.value.get(8)" target="_blank" >查看</a>
+                                        </font></td>
+                                        <td><font size='2'><a href="$package.value.get(9)" target="_blank">查看</a></font></td>
+                                        <td><font size='2'>
+                                        #if($!package.value.get(10) =='未输出')
+                                            <button type="button" class="btn btn-block btn-danger btn-xs" #if($userNick !='申兆华'&&$userNick !='张轲'&&$userNick !='张金'&&$userNick !='李君剑'&&$userNick !='郭颖') disabled #end ><a href="/pages/getSDK.jspa?sid=$package.key" ><font color="white">未输出</font></a></button></font></td>
+                                        #elseif($!package.value.get(10) =='已输出')
+                                            <button type="button" class="btn btn-block btn-success btn-xs" #if($userNick !='申兆华'&&$userNick !='张轲'&&$userNick !='张金'&&$userNick !='李君剑'&&$userNick !='郭颖') disabled #end ><a href="/pages/getSDK.jspa?sid=$package.key" ><font color="white">已输出</font></a></button></font></td>
+                                        #end
+                                        ## <input #if($!package.value.get(10) =='未输出') class="btn btn-block btn-danger btn-xs" #else class="btn btn-block btn-success btn-xs" #end type="button" id="outputing$package.key" #if($userNick !='申兆华') disabled #end value="$!package.value.get(10)"  onclick="changeValue(this)" /></font></td>
+                                    </tr>
+                                    #set($i=$i+1)
+                                #end
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </section>
+        <!-- /.content -->
+
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+##<!-- Bootstrap 3.3.6 -->
+##<script src="/resources/bootstrap/js/bootstrap.min.js"></script>
+##<!-- DataTables -->
+<script src="/resources/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/resources/plugins/datatables/dataTables.bootstrap.min.js"></script>
+##<!-- SlimScroll -->
+##<script src="/resources/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+##<!-- FastClick -->
+##<script src="/resources/plugins/fastclick/fastclick.js"></script>
+##<!-- AdminLTE App -->
+##<script src="/resources/dist/js/app.min.js"></script>
+##<!-- AdminLTE for demo purposes -->
+##<script src="/resources/dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+    $(function () {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false
+        });
+    });
+</script>
+<script language="JavaScript">
+    function myrefresh()
+    {
+        window.location.reload();
+    }
+    setTimeout('myrefresh()',300000); //指定5分钟刷新一次
+</script>
+
+<script>
+    function changeValue(obj)
+    {
+        if(obj.value=="未输出")
+        {
+            obj.value="已输出";
+            obj.className ="btn btn-block btn-success btn-xs";
+
+        }
+        else
+        {
+            obj.value="未输出";
+            obj.className ="btn btn-block btn-danger btn-xs";
+        }
+    }
+</script>

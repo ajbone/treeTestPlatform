@@ -1,0 +1,140 @@
+<!-- Content Wrapper. Contains page content -->
+<!-- Content Header (Page header) -->
+<script src="/resources/plugins/jQuery/jquery-2.2.3.min.js" xmlns="http://www.w3.org/1999/html"></script>
+<script src="/resources/js/interface.js"></script>
+#set($i = 1)
+#set($j = 0)
+###set($verification = $request.get("attributes").get("verification"))
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- /.box -->
+            <div class="box">
+                <form action="/InterFaceServlet" method="post">
+                    <input id="interfaceId" name ="interfaceId"  type="hidden"  value= "$!{interfaceId}">
+                    <input id="interfaceType" name ="interfaceType"  type="hidden"  value= "$!{interfaceType}">
+                    <input id="interfaceName" name ="interfaceName"  type="hidden"  value= "$!{interfaceName}">
+                    <input id="testType" name ="testType"  type="hidden"  value= "$!{testType}">
+                    <input id="redirect_url" name ="redirect_url"  type="hidden"  value= "$!{redirect_url}">
+##                    <input id="verification" name ="verification"  type="hidden"  value= "$!{verification}">
+                    <div class="box-body">
+                    <table id="package" class="table table-bordered table-striped">
+                        <thead>
+                        <tr >
+                            <th>
+                            <font color="#4682B4">接口名称:$verification</font></th><th >
+                            ${interfaceName}
+                            </th>
+                            <th>
+                                <font color="#4682B4">类型:</font></th><th >
+                            ${testType}
+                            </th>
+                            <th>
+                                <font color="#4682B4">创建人:</font>
+                            </th>
+                            <th>${creater}</th>
+                        </tr><tr>
+                            <th>
+                                <font color="#4682B4">接口描述:</font></th><th >
+                            ${discription}
+                            </th>
+                            <th>
+                                <font color="#4682B4">环境:</font></th><th >
+                            ${interfaceType}
+                            </th>
+                            <th><button id="editInterface" class="btn btn-primary btn-sm btn-flat" type="button"  ><a href="/pages/addInterface.jspa?edit=$interfaceId" ><font color="white">编辑接口</font></a></button></th>
+                            <th><button id="goList" class="btn btn-primary btn-sm btn-flat" type="button"  ><a href="/pages/interfaceList.jspa" ><font color="white">返回列表</font></a></button></th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+
+                <div class="box-body">
+                    <table id="eeee" class="table table-bordered table-striped">
+                        <tr><td>
+                    <table id="interface" class="table">
+                        <thead>
+                        <tr><th><font color="#4682B4">接口入参:</font></th></tr>
+                        #if($testType=="user")
+                        <tr>
+                            <th>手机号码: <input type="text"  id="loginName" name ="loginName" value ="$!{loginName}"></th>
+                            <th align="center"><button id="postCapthCode" class="btn btn-primary btn-block btn-flat" style="width: 140px" type="button" >生成验证码</button></th><th></th><th></th>
+
+                        </tr><tr>
+                        #elseif($testType=="seller")
+                        <tr>
+                            <th>login_name:</th><th> <input type="text"  id="loginName_seller" name ="loginName_seller" value ="$!{loginName_seller}"></th>
+                            <th>password:</th><th> <input type="text"  id="password_seller" name ="password_seller" value ="$!{password_seller}"></th><th></th><th></th>
+                        </tr><tr>
+                        #end
+
+                            #foreach ($pm in $parameter.entrySet())
+                                #if($pm.key=="")
+                                #else
+                                #set($b=$i*4)
+                                #if($j ==$b)
+                                </tr><tr>
+                                    <th>$pm.key: <input type="text"  id="$pm.key" name ="$pm.key" value = "$pm.value"></th>
+                                    #set ($i=$i+1)
+                                #else
+                                    <th>$pm.key: <input type="text"  id="$pm.key" name ="$pm.key" value = "$pm.value"></th>
+                                #end
+                                #set ($j=$j+1)
+                                #end
+                            #end
+                        </tr>
+                        <tr>
+                        #if($testType=="user")
+                            <th></th><th align="center"><button id="doInterface" class="btn btn-primary btn-block btn-flat" style="width: 140px" type="submit" >点击测试</button></th><th></th><th></th>
+                            <th></th>
+                        #else
+                            <th></th><th align="center"><button id="doInterface02" class="btn btn-primary btn-block btn-flat" style="width: 140px" type="submit" >点击测试</button></th><th></th><th></th>
+                            <th></th>
+                        #end
+                        </tr>
+
+                        </thead>
+                    </table>
+                    </form>
+                </td></tr></table>
+                </div>
+
+                <div class="box-body">
+                        <h3 class="box-title">结果展示</h3>
+                        <div class="box-body pad">
+                        <textarea id="result" name="result" disabled  style="width: 100%; height: 400px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+                        $!{result}
+                        </textarea>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+        <!-- /.col -->
+    <!-- /.row -->
+</section>
+<!-- /.content -->
+
+<!-- /.control-sidebar -->
+<!-- Add the sidebar's background. This div must be placed
+     immediately after the control sidebar -->
+<div class="control-sidebar-bg"></div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+##<!-- Bootstrap 3.3.6 -->
+##<script src="/resources/bootstrap/js/bootstrap.min.js"></script>
+##<!-- DataTables -->
+##<script src="/resources/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/resources/plugins/datatables/dataTables.bootstrap.min.js"></script>
+<script>
+if('$verification'=='expired'){
+    alert("验证码过期了,请重新生成!");
+//    swal("验证码过期了,请重新生成!","3秒后自动跳转");
+}
+</script>

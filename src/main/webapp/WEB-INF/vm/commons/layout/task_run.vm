@@ -1,0 +1,133 @@
+    <!-- Content Header (Page header) -->
+<script src="/resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="/resources/js/taskRun.js"></script>
+
+    #set($i=1)
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- /.box -->
+
+                    <div class="box">
+
+##                        <input id="redirect_url" name ="redirect_url"  type="hidden"  value= "$!{redirect_url}">
+                        <input id="taskId" name ="redirect_url"  type="hidden"  value= "$!{taskId}">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="box">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">任务执行</h3>
+                                    </div>
+
+                                    <div class="box-body">
+                                        <table id="package" class="table table-bordered table-striped">
+                                            <thead>
+                                            <tr >
+                                                <th align="center"><b>任务名称：</b><font color="#4682B4"> $!{taskName}</font></th>
+                                                <th align="center"><b>任务别名：</b><font color="#4682B4">$!{taskAlias}</font></th>
+                                                <th align="center"><b>git地址：</b><font color="#4682B4">$!{git}</font></th>
+                                                <th align="center"><a href="/pages/addTask.jspa?edit=${taskId}&redirect_url=$redirect_url"><font color="#AE0000"><i class="fa fa-plus">&nbsp;编辑任务</i></font></a></th>
+                                            </tr><tr>
+                                                <th align="center"><b>修改时间：</b><font color="#4682B4">$!{updatetime}</font></th>
+                                                <th align="center"><b>分支：</b><font color="#4682B4">$!{gitbranches}</font></th>
+                                                <th align="center"><b>构建命令：</b><font color="#4682B4">$!{action}</font></th>
+                                                #if ($userNick)
+                                                    <th align="center"><button id="runTask" class="btn btn-primary btn-block btn-flat" type="button" onclick="javascript:{this.disabled=true;}" >点击执行</button></th>
+                                                #else
+                                                    <th align="center"><button id="login" class="btn btn-primary btn-block btn-flat" type="button"  ><a href="/pages/login.jspa?redirect_url=$redirect_url" ><font color="white">点击执行</font></a></button></th>
+                                                #end
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+
+                                    <!-- /.box-header -->
+                                    <div class="box-body">
+                                        <table id="example1" class="table table-bordered table-hover"  style="table-layout:fixed;word-break:break-all;">
+                                            <thead>
+                                            <tr>
+                                                <th style="width: 5%">序</th>
+                                                <th style="width: 10%">执行人</th>
+                                                <th style="width: 12%">执行时间</th>
+                                                <th style="width: 12%">状态</th>
+                                                <th style="width: 20%">结果</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            #foreach ($task in $taskActionList.entrySet())
+                                                <tr>
+                                                    <td>$i</td>
+                                                    <td><font size='2'>$!task.value.get(0)</font></td>
+                                                    <td><font size='2'>$!task.value.get(1)</font></td>
+                                                    #if($!task.value.get(4)==0)
+                                                        <td><font size='2'><span class="label label-primary">$!task.value.get(2)</span></font></td>
+                                                        #elseif($!task.value.get(4)==1)
+                                                        <td><font size='2'><span class="label label-success">$!task.value.get(2)</span></font></td>
+                                                        #elseif($!task.value.get(4)==2)
+                                                        <td><font size='2'><span class="label label-danger">$!task.value.get(2)</span></font></td>
+                                                        #elseif($!task.value.get(4)==3)
+                                                        <td><font size='2'><span class="label label-warning">$!task.value.get(2)</span></font></td>
+                                                    #end
+                                                    #if($!task.value.get(4)==0)
+                                                        <td><font size='2'>$!task.value.get(3)</font></td>
+                                                        #else
+                                                        <td><font size='2'><a href="$!task.value.get(3)" target="_blank">点击查看</a></font></td>
+                                                    #end
+                                                </tr>
+                                                #set($i=$i+1)
+                                            #end
+                                            </tbody>
+                                        </table>
+                                    </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+    </div>
+            <!-- /.row -->
+
+
+        </section>
+
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+##<!-- DataTables -->
+<script src="/resources/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/resources/plugins/datatables/dataTables.bootstrap.min.js"></script>
+<!-- page script -->
+<script>
+    $(function () {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false
+        });
+    });
+</script>
+
+    <SCRIPT LANGUAGE=javascript>
+        function del() {
+            var msg = "您真的确定要删除吗？\n\n请确认！";
+            if (confirm(msg)==true){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </SCRIPT>
+
+    <script language="JavaScript">
+        function myrefresh()
+        {
+            window.location.reload();
+        }
+        setTimeout('myrefresh()',300000); //指定5分钟刷新一次
+    </script>

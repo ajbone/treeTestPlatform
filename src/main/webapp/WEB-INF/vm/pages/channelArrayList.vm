@@ -1,0 +1,39 @@
+
+
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" >
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                渠道列表
+                <small><a href="/pages/channelList.jspa?redirect_url=$redirect_url"><i class="fa fa-hand-o-right"></i> <b>&nbsp;进入集合列表</b></a></small>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <small><button type="button" class="btn btn-block btn-primary btn-xs"><a href="/pages/addChannel.jspa?redirect_url=$redirect_url" ><font color="white"><i class="fa fa-plus"></i><b>添加渠道</font></b></a></button></small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-bars"></i> Home</a></li>
+                <li class="active">渠道列表</li>
+            </ol>
+        </section>
+
+
+        <section class="content">
+
+            #parse('/commons/layout/channel_arraylist.vm')
+
+
+        </section>
+
+    </div>
+
+
+</div>
+</body>
+
+
+
